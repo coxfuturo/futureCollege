@@ -599,7 +599,7 @@ ul { list-style: none; }
   cursor: pointer;
   transition: var(--transition-base);
   text-decoration: none;
-  margin-right: auto;
+  margin-left: -25px;
   
 }
 .header-login-btn:hover { background: var(--clr-primary-dark); }
