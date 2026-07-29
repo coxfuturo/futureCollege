@@ -140,12 +140,12 @@ try {
     */
 
     $mail->setFrom(
-        'info@futurecollege.in',
+        'contact@futurecolleges.in',
         'Future College Website'
     );
 
     $mail->addAddress(
-        'info@futurecollege.in',
+        'contact@futurecolleges.in',
         'Future College'
     );
 

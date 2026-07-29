@@ -583,7 +583,6 @@ ul { list-style: none; }
   align-items: center;
   gap: var(--space-3);
   flex-shrink: 0;
-
 }
 .header-login-btn {
   display: inline-flex;
