@@ -285,13 +285,17 @@ ul { list-style: none; }
 
 /* Main Header Row */
 .header-main {
+  width: 100%;
   height: 62px;
 }
+
 .header-main .container {
   display: flex;
   align-items: center;
+  justify-content: flex-start; 
   gap: var(--space-5);
   height: 100%;
+  padding-right: 15px;
 }
 
 /* Logo */
@@ -594,6 +598,8 @@ ul { list-style: none; }
   cursor: pointer;
   transition: var(--transition-base);
   text-decoration: none;
+  margin-left: -25px;
+  
 }
 .header-login-btn:hover { background: var(--clr-primary-dark); }
 
@@ -2105,7 +2111,8 @@ college-logo-wrap img {
 .footer-logo-icon {
   width: 36px;
   height: 36px;
-  background: var(--clr-primary);
+  background: white;
+  /* background: var(--clr-primary); */
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
