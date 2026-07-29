@@ -1,15 +1,15 @@
 <?php
 
-declare(strict_types=1);
+declare( strict_types = 1 );
 
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-header('Content-Type: application/json');
+header( 'Content-Type: application/json' );
 
-date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set( 'Asia/Kolkata' );
 
 $response = [
     'status'  => false,
@@ -22,11 +22,11 @@ $response = [
 |--------------------------------------------------------------------------
 */
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+if ( $_SERVER[ 'REQUEST_METHOD' ] !== 'POST' ) {
 
-    $response['message'] = 'Invalid Request Method.';
+    $response[ 'message' ] = 'Invalid Request Method.';
 
-    echo json_encode($response);
+    echo json_encode( $response );
 
     exit;
 }
@@ -37,9 +37,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 |--------------------------------------------------------------------------
 */
 
-function clean($value): string
-{
-    return htmlspecialchars(trim($value), ENT_QUOTES, 'UTF-8');
+function clean( $value ): string
+ {
+    return htmlspecialchars( trim( $value ), ENT_QUOTES, 'UTF-8' );
 }
 
 /*
@@ -48,11 +48,11 @@ function clean($value): string
 |--------------------------------------------------------------------------
 */
 
-$fullName = clean($_POST['full_name'] ?? '');
-$email    = clean($_POST['email'] ?? '');
-$mobile   = clean($_POST['mobile_number'] ?? '');
-$city     = clean($_POST['city'] ?? '');
-$course   = clean($_POST['course'] ?? '');
+$fullName = clean( $_POST[ 'full_name' ] ?? '' );
+$email    = clean( $_POST[ 'email' ] ?? '' );
+$mobile   = clean( $_POST[ 'mobile_number' ] ?? '' );
+$city     = clean( $_POST[ 'city' ] ?? '' );
+$course   = clean( $_POST[ 'course' ] ?? '' );
 
 /*
 |--------------------------------------------------------------------------
@@ -62,31 +62,31 @@ $course   = clean($_POST['course'] ?? '');
 
 $errors = [];
 
-if ($fullName === '') {
+if ( $fullName === '' ) {
     $errors[] = 'Full Name is required.';
 }
 
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+if ( !filter_var( $email, FILTER_VALIDATE_EMAIL ) ) {
     $errors[] = 'Valid Email Address is required.';
 }
 
-if ($mobile === '') {
+if ( $mobile === '' ) {
     $errors[] = 'Mobile Number is required.';
 }
 
-if ($city === '') {
+if ( $city === '' ) {
     $errors[] = 'City is required.';
 }
 
-if ($course === '') {
+if ( $course === '' ) {
     $errors[] = 'Course is required.';
 }
 
-if (!empty($errors)) {
+if ( !empty( $errors ) ) {
 
-    $response['message'] = implode('<br>', $errors);
+    $response[ 'message' ] = implode( '<br>', $errors );
 
-    echo json_encode($response);
+    echo json_encode( $response );
 
     exit;
 }
@@ -97,13 +97,13 @@ if (!empty($errors)) {
 |--------------------------------------------------------------------------
 */
 
-$currentDate = date('d M Y h:i A');
+$currentDate = date( 'd M Y h:i A' );
 
-$currentYear = date('Y');
+$currentYear = date( 'Y' );
 
-$ipAddress = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
+$ipAddress = $_SERVER[ 'REMOTE_ADDR' ] ?? 'Unknown';
 
-$userAgent = $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown';
+$userAgent = $_SERVER[ 'HTTP_USER_AGENT' ] ?? 'Unknown';
 
 /*
 |--------------------------------------------------------------------------
@@ -111,29 +111,25 @@ $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown';
 |--------------------------------------------------------------------------
 */
 
-$mail = new PHPMailer(true);
+$mail = new PHPMailer( true );
 
 try {
 
     $mail->isSMTP();
 
-    $mail->Host = 'smtp.hostinger.com';
-
+    $mail->Host = 'smtpout.secureserver.net';
     $mail->SMTPAuth = true;
 
     $mail->Username = 'contact@futurecolleges.in';
+    $mail->Password = '';
 
-    $mail->Password = 'future@cox2.0';
-
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-
-    $mail->Port = 465;
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = 587;
 
     $mail->CharSet = 'UTF-8';
+    $mail->isHTML( true );
 
-    $mail->isHTML(true);
-
-        /*
+    /*
     |--------------------------------------------------------------------------
     | Admin Email
     |--------------------------------------------------------------------------
@@ -141,7 +137,7 @@ try {
 
     $mail->setFrom(
         'contact@futurecolleges.in',
-        'Future College Website'
+        'Future College'
     );
 
     $mail->addAddress(
@@ -249,7 +245,7 @@ try {
 
     $mail->send();
 
-        /*
+    /*
     |--------------------------------------------------------------------------
     | Student Auto Reply
     |--------------------------------------------------------------------------
@@ -262,7 +258,7 @@ try {
     $mail->clearAttachments();
 
     $mail->setFrom(
-        'info@futurecollege.in',
+        'contact@futurecolleges.in',
         'Future College'
     );
 
@@ -352,15 +348,16 @@ try {
         'message' => 'Your admission enquiry has been submitted successfully.'
     ];
 
-} catch (Exception $e) {
+} catch ( Exception $e ) {
 
     $response = [
         'status' => false,
-        'message' => $mail->ErrorInfo
+        'message' => $mail->ErrorInfo,
+        'exception' => $e->getMessage()
     ];
 
 }
 
-echo json_encode($response);
+echo json_encode( $response );
 
 exit;
