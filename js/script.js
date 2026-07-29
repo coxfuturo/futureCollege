@@ -27,7 +27,7 @@
 // ALL COURSES DROPDOWN (PRESERVED + ENHANCED)
 // ============================================================
 (function () {
-  const courseBtn  = document.getElementById('courseBtn');
+  const courseBtn = document.getElementById('courseBtn');
   const courseMenu = document.getElementById('courseMenu');
   const courseSearchInput = document.getElementById('courseSearchInput');
   const courseList = document.getElementById('courseList');
@@ -73,7 +73,7 @@
 // ============================================================
 (function () {
   const menuBtn = document.getElementById('mobileMenuBtn');
-  const drawer  = document.getElementById('mobileDrawer');
+  const drawer = document.getElementById('mobileDrawer');
   const overlay = document.getElementById('drawerOverlay');
   const closeBtn = document.getElementById('drawerCloseBtn');
 
@@ -105,11 +105,11 @@
 // HERO SLIDER (ENHANCED — auto-play + indicators)
 // ============================================================
 (function () {
-  const slides     = document.querySelectorAll('.hero-slide');
+  const slides = document.querySelectorAll('.hero-slide');
   const indicators = document.querySelectorAll('.hero-indicator');
   if (!slides.length) return;
 
-  let currentSlide  = 0;
+  let currentSlide = 0;
   let sliderInterval = null;
 
   function goToSlide(idx) {
@@ -156,8 +156,8 @@
 
   const placeholders = {
     colleges: 'Search colleges by name, location or type...',
-    courses:  'Search courses like B.Tech, MBA, MBBS...',
-    exams:    'Search entrance exams like JEE, NEET, CAT...',
+    courses: 'Search courses like B.Tech, MBA, MBBS...',
+    exams: 'Search entrance exams like JEE, NEET, CAT...',
     rankings: 'Search rankings like NIRF, QS World...',
   };
 
@@ -192,8 +192,8 @@
 // HERO SEARCH SUBMIT
 // ============================================================
 (function () {
-  const heroSearchBar    = document.getElementById('heroSearchBar');
-  const heroSearchInput  = document.getElementById('heroSearchInput');
+  const heroSearchBar = document.getElementById('heroSearchBar');
+  const heroSearchInput = document.getElementById('heroSearchInput');
   const heroSearchSubmit = document.getElementById('heroSearchSubmit');
   const headerSearchInput = document.getElementById('headerSearchInput');
 
@@ -225,7 +225,7 @@
 // COLLEGE CARD STREAM FILTER TABS
 // ============================================================
 (function () {
-  const filterTabs  = document.querySelectorAll('.filter-tab');
+  const filterTabs = document.querySelectorAll('.filter-tab');
   const collegeCards = document.querySelectorAll('.college-card[data-stream]');
   if (!filterTabs.length) return;
 

@@ -1,1522 +1,1569 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FutureColleges-India's #1 College Discovery Platform | Rankings, Admissions, Courses 2026</title>
-  <meta name="description" content="Find and compare 30,000+ colleges in India. Explore rankings, fees, placements, admission cutoffs and courses for Engineering, Medical, MBA, Law and more.">
+  <meta name="description"
+    content="Find and compare 30,000+ colleges in India. Explore rankings, fees, placements, admission cutoffs and courses for Engineering, Medical, MBA, Law and more.">
   <meta property="og:title" content="FutureColleges-India's Premium College Discovery Platform">
-  <meta property="og:description" content="Discover top colleges, compare fees, check placements, and find your dream college in India.">
+  <meta property="og:description"
+    content="Discover top colleges, compare fees, check placements, and find your dream college in India.">
   <link rel="stylesheet" href="css/style.css">
   <!-- Remix Icons -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- ============================================================
+  <!-- ============================================================
      SITE HEADER
      ============================================================ -->
-<header class="site-header" id="siteHeader">
+  <header class="site-header" id="siteHeader">
 
-  <!-- Top Bar -->
-  <div class="header-topbar">
-    <div class="container">
-      <div class="topbar-left">
-        <div class="topbar-ticker">
-          <span class="ticker-badge">LIVE</span>
-          <span class="ticker-text">JEE Main 2026 Session 2 Results Declared &nbsp;|&nbsp; NEET UG 2026 Application Last Date: Aug 15 &nbsp;|&nbsp; CAT 2026 Registration Opens July 30</span>
+    <!-- Top Bar -->
+    <div class="header-topbar">
+      <div class="container">
+        <div class="topbar-left">
+          <div class="topbar-ticker">
+            <span class="ticker-badge">LIVE</span>
+            <span class="ticker-text">JEE Main 2026 Session 2 Results Declared &nbsp;|&nbsp; NEET UG 2026 Application
+              Last Date: Aug 15 &nbsp;|&nbsp; CAT 2026 Registration Opens July 30</span>
+          </div>
         </div>
-      </div>
-      <div class="topbar-right">
-        <a href="#">Help Centre</a>
-        <div class="topbar-divider"></div>
-        <a href="#">Write a Review</a>
-        <div class="topbar-divider"></div>
-        <a href="#">For Colleges</a>
+        <div class="topbar-right">
+          <a href="#">Help Centre</a>
+          <div class="topbar-divider"></div>
+          <a href="#">Write a Review</a>
+          <div class="topbar-divider"></div>
+          <a href="#">For Colleges</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Main Header -->
-  <div class="header-main">
-    <div class="container">
+    <!-- Main Header -->
+    <div class="header-main">
+      <div class="container">
 
-      <!-- Logo -->
-      <a href="/index.html" class="site-logo">
-        <div class="logo-icon">
-          <img src="images/logo.png" alt="">
+        <!-- Logo -->
+        <a href="/index.html" class="site-logo">
+          <div class="logo-icon">
+            <img src="images/logo.png" alt="">
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">Future<span>Colleges</span></span>
+            <span class="logo-tagline">Discover · Compare · Enroll</span>
+          </div>
+        </a>
+
+        <!-- Search Bar -->
+        <div class="header-search-wrap">
+          <div class="header-search-bar">
+            <i class="ri-search-line"></i>
+            <input type="text" id="headerSearchInput" placeholder="Search colleges, courses, exams...">
+            <button class="header-search-btn">Search</button>
+          </div>
         </div>
+
+        <!-- All Courses Dropdown (preserved functionality) -->
+        <div class="courses-dropdown-wrap">
+          <button class="courses-dropdown-btn" id="courseBtn">
+            <i class="ri-book-open-line"></i>
+            All Courses
+            <i class="ri-arrow-down-s-line"></i>
+          </button>
+          <div class="courses-dropdown-menu" id="courseMenu">
+            <div class="courses-dropdown-search">
+              <i class="ri-search-line"></i>
+              <input type="text" placeholder="Search All Courses" id="courseSearchInput">
+            </div>
+            <ul class="courses-dropdown-list" id="courseList">
+              <li><a href="pages/colleges.html">B.Tech</a></li>
+              <li><a href="pages/colleges.html">MBA</a></li>
+              <li><a href="pages/colleges.html">M.Tech</a></li>
+              <li><a href="pages/colleges.html">MBBS</a></li>
+              <li><a href="pages/colleges.html">B.Com</a></li>
+              <li><a href="pages/colleges.html">B.Sc</a></li>
+              <li><a href="pages/colleges.html">B.Sc (Nursing)</a></li>
+              <li><a href="pages/colleges.html">BA</a></li>
+              <li><a href="pages/colleges.html">BBA</a></li>
+              <li><a href="pages/colleges.html">BCA</a></li>
+              <li><a href="pages/colleges.html">B.Arch</a></li>
+              <li><a href="pages/colleges.html">MCA</a></li>
+              <li><a href="pages/colleges.html">M.Com</a></li>
+              <li><a href="pages/colleges.html">Ph.D</a></li>
+              <li><a href="pages/colleges.html">LLB</a></li>
+              <li><a href="pages/colleges.html">B.Pharm</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Primary Navigation -->
+        <nav class="header-nav">
+
+          <!-- Colleges Mega Menu -->
+          <div class="nav-item">
+            <button class="nav-link">
+              Colleges <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="mega-dropdown">
+              <div class="mega-grid col-4">
+                <div>
+                  <div class="mega-col-title">By Stream</div>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-code-box-line"></i> Engineering</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-heart-pulse-line"></i> Medical</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-bar-chart-2-line"></i> Management</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-scales-3-line"></i> Law</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-flask-line"></i> Science</a>
+                </div>
+                <div>
+                  <div class="mega-col-title">By City</div>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-map-pin-line"></i> Delhi</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-map-pin-line"></i> Mumbai</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-map-pin-line"></i> Bangalore</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-map-pin-line"></i> Chennai</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-map-pin-line"></i> Hyderabad</a>
+                </div>
+                <div>
+                  <div class="mega-col-title">By Type</div>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-government-line"></i> Government</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-building-2-line"></i> Private</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-star-line"></i> Deemed</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-global-line"></i> Central Univ.</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-open-arm-line"></i> Autonomous</a>
+                </div>
+                <div>
+                  <div class="mega-col-title">Top Colleges</div>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-trophy-line"></i> NIRF Top 100</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-award-line"></i> NAAC A+</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-medal-line"></i> NBA Accredited</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-vip-crown-line"></i> IITs & NITs</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-hospital-line"></i> AIIMS & GMCs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Courses -->
+          <div class="nav-item">
+            <button class="nav-link">
+              Courses <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="mega-dropdown">
+              <div class="mega-grid">
+                <div>
+                  <div class="mega-col-title">Undergraduate</div>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-code-box-line"></i> B.Tech / BE</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-hospital-line"></i> MBBS</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-bar-chart-box-line"></i> BBA</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-scales-3-line"></i> LLB (BA)</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-computer-line"></i> BCA</a>
+                </div>
+                <div>
+                  <div class="mega-col-title">Postgraduate</div>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-settings-3-line"></i> M.Tech</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-briefcase-4-line"></i> MBA</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-stethoscope-line"></i> MD / MS</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-gavel-line"></i> LLM</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-database-2-line"></i> MCA</a>
+                </div>
+                <div>
+                  <div class="mega-col-title">Research & Diploma</div>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-microscope-line"></i> Ph.D</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-tools-line"></i> Polytechnic</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-file-certificate-line"></i> Diploma
+                    Engg.</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-book-2-line"></i> Certificate</a>
+                  <a href="pages/colleges.html" class="mega-link"><i class="ri-global-line"></i> Online Degree</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exams -->
+          <div class="nav-item">
+            <button class="nav-link">
+              Exams <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="mega-dropdown">
+              <div class="mega-grid">
+                <div>
+                  <div class="mega-col-title">Engineering</div>
+                  <a href="#" class="mega-link"><i class="ri-pencil-ruler-2-line"></i> JEE Main 2026</a>
+                  <a href="#" class="mega-link"><i class="ri-pencil-ruler-2-line"></i> JEE Advanced</a>
+                  <a href="#" class="mega-link"><i class="ri-pencil-ruler-2-line"></i> GATE 2026</a>
+                  <a href="#" class="mega-link"><i class="ri-pencil-ruler-2-line"></i> BITSAT</a>
+                  <a href="#" class="mega-link"><i class="ri-pencil-ruler-2-line"></i> VITEEE</a>
+                </div>
+                <div>
+                  <div class="mega-col-title">Medical</div>
+                  <a href="#" class="mega-link"><i class="ri-heart-pulse-line"></i> NEET UG 2026</a>
+                  <a href="#" class="mega-link"><i class="ri-heart-pulse-line"></i> NEET PG</a>
+                  <a href="#" class="mega-link"><i class="ri-heart-pulse-line"></i> AIIMS MBBS</a>
+                  <a href="#" class="mega-link"><i class="ri-heart-pulse-line"></i> JIPMER</a>
+                  <a href="#" class="mega-link"><i class="ri-heart-pulse-line"></i> INI CET</a>
+                </div>
+                <div>
+                  <div class="mega-col-title">Management</div>
+                  <a href="#" class="mega-link"><i class="ri-briefcase-4-line"></i> CAT 2026</a>
+                  <a href="#" class="mega-link"><i class="ri-briefcase-4-line"></i> XAT 2026</a>
+                  <a href="#" class="mega-link"><i class="ri-briefcase-4-line"></i> MAT 2026</a>
+                  <a href="#" class="mega-link"><i class="ri-briefcase-4-line"></i> SNAP</a>
+                  <a href="#" class="mega-link"><i class="ri-briefcase-4-line"></i> IIFT</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rankings -->
+          <a href="#" class="nav-link">Rankings</a>
+
+          <!-- Admissions -->
+          <a href="#" class="nav-link">Admissions</a>
+
+        </nav>
+
+        <!-- Header Right -->
+        <div class="header-right">
+          <a href="pages/login.html" class="header-login-btn">
+            <i class="ri-user-line"></i>
+            Login / Sign Up
+          </a>
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            <i class="ri-menu-2-line"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Sub Navigation-Stream Links -->
+    <div class="header-subnav">
+      <div class="container">
+        <a href="pages/contact.html" class="subnav-link active">Engineering</a>
+        <a href="pages/contact.html" class="subnav-link">Medical</a>
+        <a href="pages/contact.html" class="subnav-link">Management</a>
+        <a href="pages/contact.html" class="subnav-link">Law</a>
+        <a href="pages/contact.html" class="subnav-link">Science</a>
+        <a href="pages/contact.html" class="subnav-link">Commerce</a>
+        <a href="pages/contact.html" class="subnav-link">Arts</a>
+        <a href="pages/contact.html" class="subnav-link">Design</a>
+        <a href="pages/contact.html" class="subnav-link">Agriculture</a>
+        <a href="pages/contact.html" class="subnav-link">Pharmacy</a>
+        <a href="pages/contact.html" class="subnav-link">Architecture</a>
+        <a href="pages/contact.html" class="subnav-link">Hotel Mgmt</a>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="site-logo">
+        <div class="logo-icon"><i class="ri-graduation-cap-fill"></i></div>
         <div class="logo-text">
           <span class="logo-name">Future<span>Colleges</span></span>
-          <span class="logo-tagline">Discover · Compare · Enroll</span>
-        </div>
-      </a>
-
-      <!-- Search Bar -->
-      <div class="header-search-wrap">
-        <div class="header-search-bar">
-          <i class="ri-search-line"></i>
-          <input type="text" id="headerSearchInput" placeholder="Search colleges, courses, exams...">
-          <button class="header-search-btn">Search</button>
         </div>
       </div>
-
-      <!-- All Courses Dropdown (preserved functionality) -->
-      <div class="courses-dropdown-wrap">
-        <button class="courses-dropdown-btn" id="courseBtn">
-          <i class="ri-book-open-line"></i>
-          All Courses
-          <i class="ri-arrow-down-s-line"></i>
-        </button>
-        <div class="courses-dropdown-menu" id="courseMenu">
-          <div class="courses-dropdown-search">
-            <i class="ri-search-line"></i>
-            <input type="text" placeholder="Search All Courses" id="courseSearchInput">
-          </div>
-          <ul class="courses-dropdown-list" id="courseList">
-            <li><a href="pages/colleges.html">B.Tech</a></li>
-            <li><a href="pages/colleges.html">MBA</a></li>
-            <li><a href="pages/colleges.html">M.Tech</a></li>
-            <li><a href="pages/colleges.html">MBBS</a></li>
-            <li><a href="pages/colleges.html">B.Com</a></li>
-            <li><a href="pages/colleges.html">B.Sc</a></li>
-            <li><a href="pages/colleges.html">B.Sc (Nursing)</a></li>
-            <li><a href="pages/colleges.html">BA</a></li>
-            <li><a href="pages/colleges.html">BBA</a></li>
-            <li><a href="pages/colleges.html">BCA</a></li>
-            <li><a href="pages/colleges.html">B.Arch</a></li>
-            <li><a href="pages/colleges.html">MCA</a></li>
-            <li><a href="pages/colleges.html">M.Com</a></li>
-            <li><a href="pages/colleges.html">Ph.D</a></li>
-            <li><a href="pages/colleges.html">LLB</a></li>
-            <li><a href="pages/colleges.html">B.Pharm</a></li>
-          </ul>
-        </div>
+      <button class="drawer-close-btn" id="drawerCloseBtn"><i class="ri-close-line"></i></button>
+    </div>
+    <div class="drawer-search">
+      <div class="drawer-search-bar">
+        <i class="ri-search-line"></i>
+        <input type="text" placeholder="Search colleges, courses...">
       </div>
-
-      <!-- Primary Navigation -->
-      <nav class="header-nav">
-
-        <!-- Colleges Mega Menu -->
-        <div class="nav-item">
-          <button class="nav-link">
-            Colleges <i class="ri-arrow-down-s-line"></i>
-          </button>
-          <div class="mega-dropdown">
-            <div class="mega-grid col-4">
-              <div>
-                <div class="mega-col-title">By Stream</div>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-code-box-line"></i> Engineering</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-heart-pulse-line"></i> Medical</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-bar-chart-2-line"></i> Management</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-scales-3-line"></i> Law</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-flask-line"></i> Science</a>
-              </div>
-              <div>
-                <div class="mega-col-title">By City</div>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-map-pin-line"></i> Delhi</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-map-pin-line"></i> Mumbai</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-map-pin-line"></i> Bangalore</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-map-pin-line"></i> Chennai</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-map-pin-line"></i> Hyderabad</a>
-              </div>
-              <div>
-                <div class="mega-col-title">By Type</div>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-government-line"></i> Government</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-building-2-line"></i> Private</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-star-line"></i> Deemed</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-global-line"></i> Central Univ.</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-open-arm-line"></i> Autonomous</a>
-              </div>
-              <div>
-                <div class="mega-col-title">Top Colleges</div>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-trophy-line"></i> NIRF Top 100</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-award-line"></i> NAAC A+</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-medal-line"></i> NBA Accredited</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-vip-crown-line"></i> IITs & NITs</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-hospital-line"></i> AIIMS & GMCs</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Courses -->
-        <div class="nav-item">
-          <button class="nav-link">
-            Courses <i class="ri-arrow-down-s-line"></i>
-          </button>
-          <div class="mega-dropdown">
-            <div class="mega-grid">
-              <div>
-                <div class="mega-col-title">Undergraduate</div>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-code-box-line"></i> B.Tech / BE</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-hospital-line"></i> MBBS</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-bar-chart-box-line"></i> BBA</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-scales-3-line"></i> LLB (BA)</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-computer-line"></i> BCA</a>
-              </div>
-              <div>
-                <div class="mega-col-title">Postgraduate</div>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-settings-3-line"></i> M.Tech</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-briefcase-4-line"></i> MBA</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-stethoscope-line"></i> MD / MS</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-gavel-line"></i> LLM</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-database-2-line"></i> MCA</a>
-              </div>
-              <div>
-                <div class="mega-col-title">Research & Diploma</div>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-microscope-line"></i> Ph.D</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-tools-line"></i> Polytechnic</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-file-certificate-line"></i> Diploma Engg.</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-book-2-line"></i> Certificate</a>
-                <a href="pages/colleges.html" class="mega-link"><i class="ri-global-line"></i> Online Degree</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Exams -->
-        <div class="nav-item">
-          <button class="nav-link">
-            Exams <i class="ri-arrow-down-s-line"></i>
-          </button>
-          <div class="mega-dropdown">
-            <div class="mega-grid">
-              <div>
-                <div class="mega-col-title">Engineering</div>
-                <a href="#" class="mega-link"><i class="ri-pencil-ruler-2-line"></i> JEE Main 2026</a>
-                <a href="#" class="mega-link"><i class="ri-pencil-ruler-2-line"></i> JEE Advanced</a>
-                <a href="#" class="mega-link"><i class="ri-pencil-ruler-2-line"></i> GATE 2026</a>
-                <a href="#" class="mega-link"><i class="ri-pencil-ruler-2-line"></i> BITSAT</a>
-                <a href="#" class="mega-link"><i class="ri-pencil-ruler-2-line"></i> VITEEE</a>
-              </div>
-              <div>
-                <div class="mega-col-title">Medical</div>
-                <a href="#" class="mega-link"><i class="ri-heart-pulse-line"></i> NEET UG 2026</a>
-                <a href="#" class="mega-link"><i class="ri-heart-pulse-line"></i> NEET PG</a>
-                <a href="#" class="mega-link"><i class="ri-heart-pulse-line"></i> AIIMS MBBS</a>
-                <a href="#" class="mega-link"><i class="ri-heart-pulse-line"></i> JIPMER</a>
-                <a href="#" class="mega-link"><i class="ri-heart-pulse-line"></i> INI CET</a>
-              </div>
-              <div>
-                <div class="mega-col-title">Management</div>
-                <a href="#" class="mega-link"><i class="ri-briefcase-4-line"></i> CAT 2026</a>
-                <a href="#" class="mega-link"><i class="ri-briefcase-4-line"></i> XAT 2026</a>
-                <a href="#" class="mega-link"><i class="ri-briefcase-4-line"></i> MAT 2026</a>
-                <a href="#" class="mega-link"><i class="ri-briefcase-4-line"></i> SNAP</a>
-                <a href="#" class="mega-link"><i class="ri-briefcase-4-line"></i> IIFT</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Rankings -->
-        <a href="#" class="nav-link">Rankings</a>
-
-        <!-- Admissions -->
-        <a href="#" class="nav-link">Admissions</a>
-
-      </nav>
-
-      <!-- Header Right -->
-      <div class="header-right">
-        <a href="pages/login.html" class="header-login-btn">
-          <i class="ri-user-line"></i>
-          Login / Sign Up
-        </a>
-        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
-          <i class="ri-menu-2-line"></i>
-        </button>
-      </div>
-
+    </div>
+    <nav class="drawer-nav">
+      <div class="drawer-nav-item">Colleges <i class="ri-arrow-right-s-line"></i></div>
+      <div class="drawer-nav-item">Courses <i class="ri-arrow-right-s-line"></i></div>
+      <div class="drawer-nav-item">Exams <i class="ri-arrow-right-s-line"></i></div>
+      <div class="drawer-nav-item">Rankings <i class="ri-arrow-right-s-line"></i></div>
+      <div class="drawer-nav-item">Admissions <i class="ri-arrow-right-s-line"></i></div>
+      <div class="drawer-nav-item">Scholarships <i class="ri-arrow-right-s-line"></i></div>
+      <div class="drawer-nav-item">Study Abroad <i class="ri-arrow-right-s-line"></i></div>
+    </nav>
+    <div class="drawer-footer">
+      <a href="pages/login.html" class="drawer-login-btn">Login / Sign Up</a>
     </div>
   </div>
 
-  <!-- Sub Navigation-Stream Links -->
-  <div class="header-subnav">
-    <div class="container">
-      <a href="pages/contact.html" class="subnav-link active">Engineering</a>
-      <a href="pages/contact.html" class="subnav-link">Medical</a>
-      <a href="pages/contact.html" class="subnav-link">Management</a>
-      <a href="pages/contact.html" class="subnav-link">Law</a>
-      <a href="pages/contact.html" class="subnav-link">Science</a>
-      <a href="pages/contact.html" class="subnav-link">Commerce</a>
-      <a href="pages/contact.html" class="subnav-link">Arts</a>
-      <a href="pages/contact.html" class="subnav-link">Design</a>
-      <a href="pages/contact.html" class="subnav-link">Agriculture</a>
-      <a href="pages/contact.html" class="subnav-link">Pharmacy</a>
-      <a href="pages/contact.html" class="subnav-link">Architecture</a>
-      <a href="pages/contact.html" class="subnav-link">Hotel Mgmt</a>
-    </div>
-  </div>
-
-</header>
-
-<!-- Mobile Drawer Overlay -->
-<div class="mobile-drawer-overlay" id="drawerOverlay"></div>
-
-<!-- Mobile Drawer -->
-<div class="mobile-drawer" id="mobileDrawer">
-  <div class="drawer-header">
-    <div class="site-logo">
-      <div class="logo-icon"><i class="ri-graduation-cap-fill"></i></div>
-      <div class="logo-text">
-        <span class="logo-name">Future<span>Colleges</span></span>
-      </div>
-    </div>
-    <button class="drawer-close-btn" id="drawerCloseBtn"><i class="ri-close-line"></i></button>
-  </div>
-  <div class="drawer-search">
-    <div class="drawer-search-bar">
-      <i class="ri-search-line"></i>
-      <input type="text" placeholder="Search colleges, courses...">
-    </div>
-  </div>
-  <nav class="drawer-nav">
-    <div class="drawer-nav-item">Colleges <i class="ri-arrow-right-s-line"></i></div>
-    <div class="drawer-nav-item">Courses <i class="ri-arrow-right-s-line"></i></div>
-    <div class="drawer-nav-item">Exams <i class="ri-arrow-right-s-line"></i></div>
-    <div class="drawer-nav-item">Rankings <i class="ri-arrow-right-s-line"></i></div>
-    <div class="drawer-nav-item">Admissions <i class="ri-arrow-right-s-line"></i></div>
-    <div class="drawer-nav-item">Scholarships <i class="ri-arrow-right-s-line"></i></div>
-    <div class="drawer-nav-item">Study Abroad <i class="ri-arrow-right-s-line"></i></div>
-  </nav>
-  <div class="drawer-footer">
-    <a href="pages/login.html" class="drawer-login-btn">Login / Sign Up</a>
-  </div>
-</div>
-
-<!-- ============================================================
+  <!-- ============================================================
      HERO SECTION
      ============================================================ -->
-<section class="hero-section" id="heroSection">
+  <section class="hero-section" id="heroSection">
 
-  <div class="hero-slider-wrap">
+    <div class="hero-slider-wrap">
 
-    <!-- Slide 1 -->
-    <div class="hero-slide active" data-slide="0">
-      <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&q=80&auto=format&fit=crop" alt="Top Indian College Campus">
-      <div class="hero-slide-overlay"></div>
+      <!-- Slide 1 -->
+      <div class="hero-slide active" data-slide="0">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&q=80&auto=format&fit=crop"
+          alt="Top Indian College Campus">
+        <div class="hero-slide-overlay"></div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide" data-slide="1">
+        <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1600&q=80&auto=format&fit=crop"
+          alt="Engineering College">
+        <div class="hero-slide-overlay"></div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide" data-slide="2">
+        <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=1600&q=80&auto=format&fit=crop"
+          alt="Medical College">
+        <div class="hero-slide-overlay"></div>
+      </div>
+
     </div>
 
-    <!-- Slide 2 -->
-    <div class="hero-slide" data-slide="1">
-      <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1600&q=80&auto=format&fit=crop" alt="Engineering College">
-      <div class="hero-slide-overlay"></div>
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <div class="hero-inner">
+
+        <!-- Pill tabs -->
+        <div class="hero-search-pills">
+          <button class="search-pill-btn active" data-search-type="colleges">Colleges</button>
+          <button class="search-pill-btn" data-search-type="courses">Courses</button>
+          <button class="search-pill-btn" data-search-type="exams">Exams</button>
+          <button class="search-pill-btn" data-search-type="rankings">Rankings</button>
+        </div>
+
+        <div class="hero-badge">
+          <i class="ri-shield-check-fill"></i>
+          India's Most Trusted College Discovery Platform
+        </div>
+
+        <h1 class="hero-title">
+          Find Your <span>Dream College</span><br>in India-2026
+        </h1>
+
+        <p class="hero-subtitle">
+          Compare 30,000+ colleges by rankings, fees, placements &amp; admissions
+        </p>
+
+        <!-- Hero Search -->
+        <div class="hero-search-bar" id="heroSearchBar">
+          <i class="ri-search-line"></i>
+          <input type="text" id="heroSearchInput" placeholder="Search colleges, courses, exams...">
+          <button class="hero-search-submit" id="heroSearchSubmit">
+            <i class="ri-search-line"></i> Search
+          </button>
+        </div>
+
+        <!-- Quick Filter Chips -->
+        <div class="hero-quick-filters">
+          <span class="hero-filter-label">Popular:</span>
+          <button class="hero-filter-chip" data-filter="engineering">B.Tech</button>
+          <button class="hero-filter-chip" data-filter="medical">MBBS</button>
+          <button class="hero-filter-chip" data-filter="management">MBA</button>
+          <button class="hero-filter-chip" data-filter="law">LLB</button>
+          <button class="hero-filter-chip" data-filter="science">B.Sc</button>
+          <button class="hero-filter-chip" data-filter="design">B.Design</button>
+        </div>
+
+      </div>
     </div>
 
-    <!-- Slide 3 -->
-    <div class="hero-slide" data-slide="2">
-      <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=1600&q=80&auto=format&fit=crop" alt="Medical College">
-      <div class="hero-slide-overlay"></div>
+    <!-- Slide Indicators -->
+    <div class="hero-indicators">
+      <button class="hero-indicator active" data-idx="0" aria-label="Slide 1"></button>
+      <button class="hero-indicator" data-idx="1" aria-label="Slide 2"></button>
+      <button class="hero-indicator" data-idx="2" aria-label="Slide 3"></button>
     </div>
 
+  </section>
+
+  <!-- Stats Bar -->
+  <div class="hero-stats-bar">
+    <div class="container">
+      <div class="hero-stat-item">
+        <div class="hero-stat-icon"><i class="ri-building-2-line"></i></div>
+        <div>
+          <div class="hero-stat-value">30,000+</div>
+          <div class="hero-stat-label">Colleges Listed</div>
+        </div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="hero-stat-icon"><i class="ri-user-heart-line"></i></div>
+        <div>
+          <div class="hero-stat-value">5 Lakh+</div>
+          <div class="hero-stat-label">Students Enrolled</div>
+        </div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="hero-stat-icon"><i class="ri-file-paper-2-line"></i></div>
+        <div>
+          <div class="hero-stat-value">2,000+</div>
+          <div class="hero-stat-label">Entrance Exams</div>
+        </div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="hero-stat-icon"><i class="ri-star-fill"></i></div>
+        <div>
+          <div class="hero-stat-value">98%</div>
+          <div class="hero-stat-label">Success Rate</div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- Hero Content -->
-  <div class="hero-content">
-    <div class="hero-inner">
-
-      <!-- Pill tabs -->
-      <div class="hero-search-pills">
-        <button class="search-pill-btn active" data-search-type="colleges">Colleges</button>
-        <button class="search-pill-btn" data-search-type="courses">Courses</button>
-        <button class="search-pill-btn" data-search-type="exams">Exams</button>
-        <button class="search-pill-btn" data-search-type="rankings">Rankings</button>
-      </div>
-
-      <div class="hero-badge">
-        <i class="ri-shield-check-fill"></i>
-        India's Most Trusted College Discovery Platform
-      </div>
-
-      <h1 class="hero-title">
-        Find Your <span>Dream College</span><br>in India-2026
-      </h1>
-
-      <p class="hero-subtitle">
-        Compare 30,000+ colleges by rankings, fees, placements &amp; admissions
-      </p>
-
-      <!-- Hero Search -->
-      <div class="hero-search-bar" id="heroSearchBar">
-        <i class="ri-search-line"></i>
-        <input type="text" id="heroSearchInput" placeholder="Search colleges, courses, exams...">
-        <button class="hero-search-submit" id="heroSearchSubmit">
-          <i class="ri-search-line"></i> Search
-        </button>
-      </div>
-
-      <!-- Quick Filter Chips -->
-      <div class="hero-quick-filters">
-        <span class="hero-filter-label">Popular:</span>
-        <button class="hero-filter-chip" data-filter="engineering">B.Tech</button>
-        <button class="hero-filter-chip" data-filter="medical">MBBS</button>
-        <button class="hero-filter-chip" data-filter="management">MBA</button>
-        <button class="hero-filter-chip" data-filter="law">LLB</button>
-        <button class="hero-filter-chip" data-filter="science">B.Sc</button>
-        <button class="hero-filter-chip" data-filter="design">B.Design</button>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Slide Indicators -->
-  <div class="hero-indicators">
-    <button class="hero-indicator active" data-idx="0" aria-label="Slide 1"></button>
-    <button class="hero-indicator" data-idx="1" aria-label="Slide 2"></button>
-    <button class="hero-indicator" data-idx="2" aria-label="Slide 3"></button>
-  </div>
-
-</section>
-
-<!-- Stats Bar -->
-<div class="hero-stats-bar">
-  <div class="container">
-    <div class="hero-stat-item">
-      <div class="hero-stat-icon"><i class="ri-building-2-line"></i></div>
-      <div>
-        <div class="hero-stat-value">30,000+</div>
-        <div class="hero-stat-label">Colleges Listed</div>
-      </div>
-    </div>
-    <div class="hero-stat-item">
-      <div class="hero-stat-icon"><i class="ri-user-heart-line"></i></div>
-      <div>
-        <div class="hero-stat-value">5 Lakh+</div>
-        <div class="hero-stat-label">Students Enrolled</div>
-      </div>
-    </div>
-    <div class="hero-stat-item">
-      <div class="hero-stat-icon"><i class="ri-file-paper-2-line"></i></div>
-      <div>
-        <div class="hero-stat-value">2,000+</div>
-        <div class="hero-stat-label">Entrance Exams</div>
-      </div>
-    </div>
-    <div class="hero-stat-item">
-      <div class="hero-stat-icon"><i class="ri-star-fill"></i></div>
-      <div>
-        <div class="hero-stat-value">98%</div>
-        <div class="hero-stat-label">Success Rate</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ============================================================
+  <!-- ============================================================
      STREAM EXPLORER
      ============================================================ -->
-<section class="stream-section animate-on-scroll">
-  <div class="container">
-    <div class="section-header-row">
-      <div>
-        <div class="section-label"><i class="ri-apps-2-line"></i> Browse by Stream</div>
-        <h2 style="font-size: 28px; font-weight:800;">Explore Top Colleges by Stream</h2>
+  <section class="stream-section animate-on-scroll">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <div class="section-label"><i class="ri-apps-2-line"></i> Browse by Stream</div>
+          <h2 style="font-size: 28px; font-weight:800;">Explore Top Colleges by Stream</h2>
+        </div>
+        <a href="pages/colleges.html" class="view-all-link">View All Streams <i class="ri-arrow-right-line"></i></a>
       </div>
-      <a href="pages/colleges.html" class="view-all-link">View All Streams <i class="ri-arrow-right-line"></i></a>
-    </div>
 
-    <div class="stream-grid">
-      <a href="pages/colleges.html" class="stream-card">
-        <div class="stream-icon si-engineering"><i class="ri-code-box-line"></i></div>
-        <div class="stream-name">Engineering</div>
-        <div class="stream-count">4,500+ Colleges</div>
-      </a>
-      <a href="pages/colleges.html" class="stream-card">
-        <div class="stream-icon si-medical"><i class="ri-heart-pulse-line"></i></div>
-        <div class="stream-name">Medical</div>
-        <div class="stream-count">1,200+ Colleges</div>
-      </a>
-      <a href="pages/colleges.html" class="stream-card">
-        <div class="stream-icon si-management"><i class="ri-bar-chart-2-line"></i></div>
-        <div class="stream-name">Management</div>
-        <div class="stream-count">3,800+ Colleges</div>
-      </a>
-      <a href="pages/colleges.html" class="stream-card">
-        <div class="stream-icon si-law"><i class="ri-scales-3-line"></i></div>
-        <div class="stream-name">Law</div>
-        <div class="stream-count">1,050+ Colleges</div>
-      </a>
-      <a href="pages/colleges.html" class="stream-card">
-        <div class="stream-icon si-science"><i class="ri-flask-line"></i></div>
-        <div class="stream-name">Science</div>
-        <div class="stream-count">5,200+ Colleges</div>
-      </a>
-      <a href="pages/colleges.html" class="stream-card">
-        <div class="stream-icon si-commerce"><i class="ri-line-chart-line"></i></div>
-        <div class="stream-name">Commerce</div>
-        <div class="stream-count">2,600+ Colleges</div>
-      </a>
-      <a href="pages/colleges.html" class="stream-card">
-        <div class="stream-icon si-arts"><i class="ri-palette-line"></i></div>
-        <div class="stream-name">Arts & Humanities</div>
-        <div class="stream-count">4,100+ Colleges</div>
-      </a>
-      <a href="pages/colleges.html" class="stream-card">
-        <div class="stream-icon si-design"><i class="ri-brush-4-line"></i></div>
-        <div class="stream-name">Design</div>
-        <div class="stream-count">680+ Colleges</div>
-      </a>
-      <a href="pages/colleges.html" class="stream-card">
-        <div class="stream-icon si-agriculture"><i class="ri-plant-line"></i></div>
-        <div class="stream-name">Agriculture</div>
-        <div class="stream-count">920+ Colleges</div>
-      </a>
-      <a href="pages/colleges.html" class="stream-card">
-        <div class="stream-icon si-pharmacy"><i class="ri-capsule-line"></i></div>
-        <div class="stream-name">Pharmacy</div>
-        <div class="stream-count">1,400+ Colleges</div>
-      </a>
+      <div class="stream-grid">
+        <a href="pages/colleges.html" class="stream-card">
+          <div class="stream-icon si-engineering"><i class="ri-code-box-line"></i></div>
+          <div class="stream-name">Engineering</div>
+          <div class="stream-count">4,500+ Colleges</div>
+        </a>
+        <a href="pages/colleges.html" class="stream-card">
+          <div class="stream-icon si-medical"><i class="ri-heart-pulse-line"></i></div>
+          <div class="stream-name">Medical</div>
+          <div class="stream-count">1,200+ Colleges</div>
+        </a>
+        <a href="pages/colleges.html" class="stream-card">
+          <div class="stream-icon si-management"><i class="ri-bar-chart-2-line"></i></div>
+          <div class="stream-name">Management</div>
+          <div class="stream-count">3,800+ Colleges</div>
+        </a>
+        <a href="pages/colleges.html" class="stream-card">
+          <div class="stream-icon si-law"><i class="ri-scales-3-line"></i></div>
+          <div class="stream-name">Law</div>
+          <div class="stream-count">1,050+ Colleges</div>
+        </a>
+        <a href="pages/colleges.html" class="stream-card">
+          <div class="stream-icon si-science"><i class="ri-flask-line"></i></div>
+          <div class="stream-name">Science</div>
+          <div class="stream-count">5,200+ Colleges</div>
+        </a>
+        <a href="pages/colleges.html" class="stream-card">
+          <div class="stream-icon si-commerce"><i class="ri-line-chart-line"></i></div>
+          <div class="stream-name">Commerce</div>
+          <div class="stream-count">2,600+ Colleges</div>
+        </a>
+        <a href="pages/colleges.html" class="stream-card">
+          <div class="stream-icon si-arts"><i class="ri-palette-line"></i></div>
+          <div class="stream-name">Arts & Humanities</div>
+          <div class="stream-count">4,100+ Colleges</div>
+        </a>
+        <a href="pages/colleges.html" class="stream-card">
+          <div class="stream-icon si-design"><i class="ri-brush-4-line"></i></div>
+          <div class="stream-name">Design</div>
+          <div class="stream-count">680+ Colleges</div>
+        </a>
+        <a href="pages/colleges.html" class="stream-card">
+          <div class="stream-icon si-agriculture"><i class="ri-plant-line"></i></div>
+          <div class="stream-name">Agriculture</div>
+          <div class="stream-count">920+ Colleges</div>
+        </a>
+        <a href="pages/colleges.html" class="stream-card">
+          <div class="stream-icon si-pharmacy"><i class="ri-capsule-line"></i></div>
+          <div class="stream-name">Pharmacy</div>
+          <div class="stream-count">1,400+ Colleges</div>
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============================================================
+  <!-- ============================================================
      TOP COLLEGES SECTION
      ============================================================ -->
-<section class="top-colleges-section animate-on-scroll">
-  <div class="container">
-    <div class="section-header-row">
-      <div>
-        <div class="section-label"><i class="ri-trophy-line"></i> Top Ranked</div>
-        <h2 style="font-size: 28px; font-weight:800;">Top Colleges in India 2026</h2>
-        <p style="color:var(--clr-text-secondary); margin-top:6px; font-size:15px;">Compare rankings, fees, placements and admissions side by side</p>
+  <section class="top-colleges-section animate-on-scroll">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <div class="section-label"><i class="ri-trophy-line"></i> Top Ranked</div>
+          <h2 style="font-size: 28px; font-weight:800;">Top Colleges in India 2026</h2>
+          <p style="color:var(--clr-text-secondary); margin-top:6px; font-size:15px;">Compare rankings, fees, placements
+            and admissions side by side</p>
+        </div>
+        <a href="pages/colleges.html" class="view-all-link">View All Colleges <i class="ri-arrow-right-line"></i></a>
       </div>
-      <a href="pages/colleges.html" class="view-all-link">View All Colleges <i class="ri-arrow-right-line"></i></a>
+
+      <!-- Stream Filter Tabs -->
+      <div class="filter-tab-row" id="collegeFilterTabs">
+        <button class="filter-tab active" data-stream="all">All</button>
+        <button class="filter-tab" data-stream="engineering">Engineering</button>
+        <button class="filter-tab" data-stream="medical">Medical</button>
+        <button class="filter-tab" data-stream="management">Management</button>
+        <button class="filter-tab" data-stream="law">Law</button>
+      </div>
+
+      <!-- College Cards Grid -->
+      <div class="college-card-grid" id="collegeCardsGrid">
+
+        <!-- Card 1-IIT Madras -->
+        <div class="college-card" data-stream="engineering">
+          <div class="college-card-banner stream-engineering">
+            <span class="college-rank-badge"> NIRF 2026</span>
+            <button class="college-wishlist-btn" aria-label="Save to wishlist">
+              <i class="ri-heart-line"></i>
+            </button>
+            <div class="college-logo-wrap">
+              <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1200&q=80" alt="Galgotias">
+            </div>
+          </div>
+          <div class="college-card-body">
+            <div class="college-card-header">
+              <h3 class="college-card-name">Galgotias University</h3>
+              <span class="college-rating-badge"><i class="ri-star-fill"></i> 4.9</span>
+            </div>
+            <p class="college-location"><i class="ri-map-pin-2-line"></i>Greater Noida, Uttar Pradesh</p>
+            <div class="college-tags">
+              <span class="college-tag naac-aplus">NAAC A++</span>
+              <span class="college-tag nirf">NIRF (101-105)</span>
+              <span class="college-tag nba">NBA</span>
+            </div>
+            <div class="college-stats">
+              <div class="college-stat-item">
+                <span class="college-stat-label">Total Fees</span>
+                <span class="college-stat-value">₹8.0 L</span>
+              </div>
+              <div class="college-stat-item">
+                <span class="college-stat-label">Avg. Package</span>
+                <span class="college-stat-value">₹5.4LPA</span>
+              </div>
+              <div class="college-stat-item">
+                <span class="college-stat-label">Highest Pkg</span>
+                <span class="college-stat-value">₹60 LPA</span>
+              </div>
+            </div>
+            <div class="college-card-actions">
+              <a href="pages/colleges.html" class="college-apply-btn">
+                Apply Now <i class="ri-arrow-right-line"></i>
+              </a>
+              <label class="compare-check">
+                <input type="checkbox"> Compare
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2-IIT Delhi -->
+        <div class="college-card" data-stream="engineering">
+          <div class="college-card-banner stream-engineering">
+            <span class="college-rank-badge"> NIRF 2026</span>
+            <button class="college-wishlist-btn" aria-label="Save to wishlist">
+              <i class="ri-heart-line"></i>
+            </button>
+            <div class="college-logo-wrap">
+              <img src="https://www.iesonline.co.in/colleges-image/sharda-university.png" alt="Sharda universities">
+            </div>
+          </div>
+          <div class="college-card-body">
+            <div class="college-card-header">
+              <h3 class="college-card-name">Sharda University</h3>
+              <span class="college-rating-badge"><i class="ri-star-fill"></i> 4.9</span>
+            </div>
+            <p class="college-location"><i class="ri-map-pin-2-line"></i> Greater Noida, Uttar Pradesh</p>
+            <div class="college-tags">
+              <span class="college-tag naac-aplus">NAAC A++</span>
+              <span class="college-tag nirf">NIRF 89</span>
+              <span class="college-tag nba">NBA</span>
+            </div>
+            <div class="college-stats">
+              <div class="college-stat-item">
+                <span class="college-stat-label">Total Fees</span>
+                <span class="college-stat-value">₹10.0L</span>
+              </div>
+              <div class="college-stat-item">
+                <span class="college-stat-label">Avg. Package</span>
+                <span class="college-stat-value">₹6.5 LPA</span>
+              </div>
+              <div class="college-stat-item">
+                <span class="college-stat-label">Highest Pkg</span>
+                <span class="college-stat-value">₹1.00 Cr</span>
+              </div>
+            </div>
+            <div class="college-card-actions">
+              <a href="pages/colleges.html" class="college-apply-btn">
+                Apply Now <i class="ri-arrow-right-line"></i>
+              </a>
+              <label class="compare-check">
+                <input type="checkbox"> Compare
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3-Shiv Nadar University (SNU)i -->
+        <div class="college-card" data-stream="medical">
+          <div class="college-card-banner stream-medical">
+            <span class="college-rank-badge">NIRF</span>
+            <button class="college-wishlist-btn" aria-label="Save to wishlist">
+              <i class="ri-heart-line"></i>
+            </button>
+            <div class="college-logo-wrap">
+              <img src="https://www.searchurcollege.com/blog/wp-content/uploads/2023/11/shiv.png"
+                alt="Shiv Nadar University (SNU)">
+            </div>
+          </div>
+          <div class="college-card-body">
+            <div class="college-card-header">
+              <h3 class="college-card-name">Shiv Nadar University (SNU)</h3>
+              <span class="college-rating-badge"><i class="ri-star-fill"></i> 4.9</span>
+            </div>
+            <p class="college-location"><i class="ri-map-pin-2-line"></i> Greater Noida, Uttar Pradesh</p>
+            <div class="college-tags">
+              <span class="college-tag naac-aplus">NAAC A++</span>
+              <span class="college-tag nirf">NIRF </span>
+            </div>
+            <div class="college-stats">
+              <div class="college-stat-item">
+                <span class="college-stat-label">Total Fees</span>
+                <span class="college-stat-value">₹22 LPA</span>
+              </div>
+              <div class="college-stat-item">
+                <span class="college-stat-label">Avg. Package</span>
+                <span class="college-stat-value">₹11 LPA</span>
+              </div>
+              <div class="college-stat-item">
+                <span class="college-stat-label">Highest Pkg</span>
+                <span class="college-stat-value">₹58 LPA</span>
+              </div>
+            </div>
+            <div class="college-card-actions">
+              <a href="pages/colleges.html" class="college-apply-btn">
+                Apply Now <i class="ri-arrow-right-line"></i>
+              </a>
+              <label class="compare-check">
+                <input type="checkbox"> Compare
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4-Gautam Buddha University (GBU) -->
+        <div class="college-card" data-stream="management">
+          <div class="college-card-banner stream-management">
+            <span class="college-rank-badge">NIRF</span>
+            <button class="college-wishlist-btn" aria-label="Save to wishlist">
+              <i class="ri-heart-line"></i>
+            </button>
+            <div class="college-logo-wrap">
+              <img src="https://raw.githubusercontent.com/vishal-pandey/content-gbusite/master/slider/5.jpg"
+                alt="Gautam Buddha University (GBU)">
+            </div>
+          </div>
+          <div class="college-card-body">
+            <div class="college-card-header">
+              <h3 class="college-card-name"> Gautam Buddha University (GBU)</h3>
+              <span class="college-rating-badge"><i class="ri-star-fill"></i> 4.8</span>
+            </div>
+            <p class="college-location"><i class="ri-map-pin-2-line"></i> Greater Noida, Uttar Pradesh</p>
+            <div class="college-tags">
+              <span class="college-tag naac-aplus">NAAC A+</span>
+              <span class="college-tag nirf">NIRF</span>
+              <span class="college-tag autonomous">AACSB</span>
+            </div>
+            <div class="college-stats">
+              <div class="college-stat-item">
+                <span class="college-stat-label">Total Fees</span>
+                <span class="college-stat-value">₹5.5 L</span>
+              </div>
+              <div class="college-stat-item">
+                <span class="college-stat-label">Avg. Package</span>
+                <span class="college-stat-value">₹5 LPA</span>
+              </div>
+              <div class="college-stat-item">
+                <span class="college-stat-label">Highest Pkg</span>
+                <span class="college-stat-value">₹40 LPA</span>
+              </div>
+            </div>
+            <div class="college-card-actions">
+              <a href="pages/colleges.html" class="college-apply-btn">
+                Apply Now <i class="ri-arrow-right-line"></i>
+              </a>
+              <label class="compare-check">
+                <input type="checkbox"> Compare
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5-Bennett University -->
+        <div class="college-card" data-stream="engineering">
+          <div class="college-card-banner stream-engineering">
+            <span class="college-rank-badge">#5 Engineering</span>
+            <button class="college-wishlist-btn" aria-label="Save to wishlist">
+              <i class="ri-heart-line"></i>
+            </button>
+            <div class="college-logo-wrap">
+              <img src="https://careerchoice360.in/image/bennette/1691472463bennut.jpg" alt="Bennett University">
+            </div>
+          </div>
+          <div class="college-card-body">
+            <div class="college-card-header">
+              <h3 class="college-card-name">Bennett University | Private University</h3>
+              <span class="college-rating-badge"><i class="ri-star-fill"></i> 4.7</span>
+            </div>
+            <p class="college-location"><i class="ri-map-pin-2-line"></i> Greater Noida, Uttar Pradesh</p>
+            <div class="college-tags">
+              <span class="college-tag naac-aplus">NAAC A</span>
+              <span class="college-tag nirf">NIRF #101-200</span>
+            </div>
+            <div class="college-stats">
+              <div class="college-stat-item">
+                <span class="college-stat-label">Total Fees</span>
+                <span class="college-stat-value">₹16.5 LPA</span>
+              </div>
+              <div class="college-stat-item">
+                <span class="college-stat-label">Avg. Package</span>
+                <span class="college-stat-value">₹7.9 LPA</span>
+              </div>
+              <div class="college-stat-item">
+                <span class="college-stat-label">Highest Pkg</span>
+                <span class="college-stat-value">₹1.37 cr</span>
+              </div>
+            </div>
+            <div class="college-card-actions">
+              <a href="pages/colleges.html" class="college-apply-btn">
+                Apply Now <i class="ri-arrow-right-line"></i>
+              </a>
+              <label class="compare-check">
+                <input type="checkbox"> Compare
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6-NLU Delhi -->
+        <div class="college-card" data-stream="law">
+          <div class="college-card-banner stream-law">
+            <span class="college-rank-badge">NIRF</span>
+            <button class="college-wishlist-btn" aria-label="Save to wishlist">
+              <i class="ri-heart-line"></i>
+            </button>
+            <div class="college-logo-wrap">
+              <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=1200&q=80"
+                alt="G.L. Bajaj Institute of Technology & Management">
+            </div>
+          </div>
+          <div class="college-card-body">
+            <div class="college-card-header">
+              <h3 class="college-card-name">G.L. Bajaj Institute of Technology & Management</h3>
+              <span class="college-rating-badge"><i class="ri-star-fill"></i> 4.8</span>
+            </div>
+            <p class="college-location"><i class="ri-map-pin-2-line"></i> Greater Noida, Uttar Pradesh</p>
+            <div class="college-tags">
+              <span class="college-tag naac-aplus">NAAC A+</span>
+              <span class="college-tag nirf">NIRF</span>
+            </div>
+            <div class="college-stats">
+              <div class="college-stat-item">
+                <span class="college-stat-label">Total Fees</span>
+                <span class="college-stat-value">₹5.6 L</span>
+              </div>
+              <div class="college-stat-item">
+                <span class="college-stat-label">Avg. Package</span>
+                <span class="college-stat-value">₹6 LPA</span>
+              </div>
+              <div class="college-stat-item">
+                <span class="college-stat-label">Highest Pkg</span>
+                <span class="college-stat-value">₹58 LPA</span>
+              </div>
+            </div>
+            <div class="college-card-actions">
+              <a href="pages/colleges.html" class="college-apply-btn">
+                Apply Now <i class="ri-arrow-right-line"></i>
+              </a>
+              <label class="compare-check">
+                <input type="checkbox"> Compare
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /college-card-grid -->
     </div>
+  </section>
 
-    <!-- Stream Filter Tabs -->
-    <div class="filter-tab-row" id="collegeFilterTabs">
-      <button class="filter-tab active" data-stream="all">All</button>
-      <button class="filter-tab" data-stream="engineering">Engineering</button>
-      <button class="filter-tab" data-stream="medical">Medical</button>
-      <button class="filter-tab" data-stream="management">Management</button>
-      <button class="filter-tab" data-stream="law">Law</button>
-    </div>
-
-    <!-- College Cards Grid -->
-    <div class="college-card-grid" id="collegeCardsGrid">
-
-      <!-- Card 1-IIT Madras -->
-      <div class="college-card" data-stream="engineering">
-        <div class="college-card-banner stream-engineering">
-          <span class="college-rank-badge"> NIRF 2026</span>
-          <button class="college-wishlist-btn" aria-label="Save to wishlist">
-            <i class="ri-heart-line"></i>
-          </button>
-          <div class="college-logo-wrap">
-            <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1200&q=80" alt="Galgotias">
-          </div>
-        </div>
-        <div class="college-card-body">
-          <div class="college-card-header">
-            <h3 class="college-card-name">Galgotias University</h3>
-            <span class="college-rating-badge"><i class="ri-star-fill"></i> 4.9</span>
-          </div>
-          <p class="college-location"><i class="ri-map-pin-2-line"></i>Greater Noida, Uttar Pradesh</p>
-          <div class="college-tags">
-            <span class="college-tag naac-aplus">NAAC A++</span>
-            <span class="college-tag nirf">NIRF (101-105)</span>
-            <span class="college-tag nba">NBA</span>
-          </div>
-          <div class="college-stats">
-            <div class="college-stat-item">
-              <span class="college-stat-label">Total Fees</span>
-              <span class="college-stat-value">₹8.0 L</span>
-            </div>
-            <div class="college-stat-item">
-              <span class="college-stat-label">Avg. Package</span>
-              <span class="college-stat-value">₹5.4LPA</span>
-            </div>
-            <div class="college-stat-item">
-              <span class="college-stat-label">Highest Pkg</span>
-              <span class="college-stat-value">₹60 LPA</span>
-            </div>
-          </div>
-          <div class="college-card-actions">
-            <a href="pages/colleges.html" class="college-apply-btn">
-              Apply Now <i class="ri-arrow-right-line"></i>
-            </a>
-            <label class="compare-check">
-              <input type="checkbox"> Compare
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2-IIT Delhi -->
-      <div class="college-card" data-stream="engineering">
-        <div class="college-card-banner stream-engineering">
-          <span class="college-rank-badge"> NIRF 2026</span>
-          <button class="college-wishlist-btn" aria-label="Save to wishlist">
-            <i class="ri-heart-line"></i>
-          </button>
-          <div class="college-logo-wrap">
-            <img src="https://www.iesonline.co.in/colleges-image/sharda-university.png" alt="Sharda universities">
-          </div>
-        </div>
-        <div class="college-card-body">
-          <div class="college-card-header">
-            <h3 class="college-card-name">Sharda University</h3>
-            <span class="college-rating-badge"><i class="ri-star-fill"></i> 4.9</span>
-          </div>
-          <p class="college-location"><i class="ri-map-pin-2-line"></i> Greater Noida, Uttar Pradesh</p>
-          <div class="college-tags">
-            <span class="college-tag naac-aplus">NAAC A++</span>
-            <span class="college-tag nirf">NIRF 89</span>
-            <span class="college-tag nba">NBA</span>
-          </div>
-          <div class="college-stats">
-            <div class="college-stat-item">
-              <span class="college-stat-label">Total Fees</span>
-              <span class="college-stat-value">₹10.0L</span>
-            </div>
-            <div class="college-stat-item">
-              <span class="college-stat-label">Avg. Package</span>
-              <span class="college-stat-value">₹6.5 LPA</span>
-            </div>
-            <div class="college-stat-item">
-              <span class="college-stat-label">Highest Pkg</span>
-              <span class="college-stat-value">₹1.00 Cr</span>
-            </div>
-          </div>
-          <div class="college-card-actions">
-            <a href="pages/colleges.html" class="college-apply-btn">
-              Apply Now <i class="ri-arrow-right-line"></i>
-            </a>
-            <label class="compare-check">
-              <input type="checkbox"> Compare
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3-Shiv Nadar University (SNU)i -->
-      <div class="college-card" data-stream="medical">
-        <div class="college-card-banner stream-medical">
-          <span class="college-rank-badge">NIRF</span>
-          <button class="college-wishlist-btn" aria-label="Save to wishlist">
-            <i class="ri-heart-line"></i>
-          </button>
-          <div class="college-logo-wrap">
-            <img src="https://www.searchurcollege.com/blog/wp-content/uploads/2023/11/shiv.png" alt="Shiv Nadar University (SNU)">
-          </div>
-        </div>
-        <div class="college-card-body">
-          <div class="college-card-header">
-            <h3 class="college-card-name">Shiv Nadar University (SNU)</h3>
-            <span class="college-rating-badge"><i class="ri-star-fill"></i> 4.9</span>
-          </div>
-          <p class="college-location"><i class="ri-map-pin-2-line"></i> Greater Noida, Uttar Pradesh</p>
-          <div class="college-tags">
-            <span class="college-tag naac-aplus">NAAC A++</span>
-            <span class="college-tag nirf">NIRF </span>
-          </div>
-          <div class="college-stats">
-            <div class="college-stat-item">
-              <span class="college-stat-label">Total Fees</span>
-              <span class="college-stat-value">₹22 LPA</span>
-            </div>
-            <div class="college-stat-item">
-              <span class="college-stat-label">Avg. Package</span>
-              <span class="college-stat-value">₹11 LPA</span>
-            </div>
-            <div class="college-stat-item">
-              <span class="college-stat-label">Highest Pkg</span>
-              <span class="college-stat-value">₹58 LPA</span>
-            </div>
-          </div>
-          <div class="college-card-actions">
-            <a href="pages/colleges.html" class="college-apply-btn">
-              Apply Now <i class="ri-arrow-right-line"></i>
-            </a>
-            <label class="compare-check">
-              <input type="checkbox"> Compare
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4-Gautam Buddha University (GBU) -->
-      <div class="college-card" data-stream="management">
-        <div class="college-card-banner stream-management">
-          <span class="college-rank-badge">NIRF</span>
-          <button class="college-wishlist-btn" aria-label="Save to wishlist">
-            <i class="ri-heart-line"></i>
-          </button>
-          <div class="college-logo-wrap">
-            <img src="https://raw.githubusercontent.com/vishal-pandey/content-gbusite/master/slider/5.jpg" alt="Gautam Buddha University (GBU)">
-          </div>
-        </div>
-        <div class="college-card-body">
-          <div class="college-card-header">
-            <h3 class="college-card-name"> Gautam Buddha University (GBU)</h3>
-            <span class="college-rating-badge"><i class="ri-star-fill"></i> 4.8</span>
-          </div>
-          <p class="college-location"><i class="ri-map-pin-2-line"></i> Greater Noida, Uttar Pradesh</p>
-          <div class="college-tags">
-            <span class="college-tag naac-aplus">NAAC A+</span>
-            <span class="college-tag nirf">NIRF</span>
-            <span class="college-tag autonomous">AACSB</span>
-          </div>
-          <div class="college-stats">
-            <div class="college-stat-item">
-              <span class="college-stat-label">Total Fees</span>
-              <span class="college-stat-value">₹5.5 L</span>
-            </div>
-            <div class="college-stat-item">
-              <span class="college-stat-label">Avg. Package</span>
-              <span class="college-stat-value">₹5 LPA</span>
-            </div>
-            <div class="college-stat-item">
-              <span class="college-stat-label">Highest Pkg</span>
-              <span class="college-stat-value">₹40 LPA</span>
-            </div>
-          </div>
-          <div class="college-card-actions">
-            <a href="pages/colleges.html" class="college-apply-btn">
-              Apply Now <i class="ri-arrow-right-line"></i>
-            </a>
-            <label class="compare-check">
-              <input type="checkbox"> Compare
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 5-Bennett University -->
-      <div class="college-card" data-stream="engineering">
-        <div class="college-card-banner stream-engineering">
-          <span class="college-rank-badge">#5 Engineering</span>
-          <button class="college-wishlist-btn" aria-label="Save to wishlist">
-            <i class="ri-heart-line"></i>
-          </button>
-          <div class="college-logo-wrap">
-            <img src="https://careerchoice360.in/image/bennette/1691472463bennut.jpg" alt="Bennett University">
-          </div>
-        </div>
-        <div class="college-card-body">
-          <div class="college-card-header">
-            <h3 class="college-card-name">Bennett University | Private University</h3>
-            <span class="college-rating-badge"><i class="ri-star-fill"></i> 4.7</span>
-          </div>
-          <p class="college-location"><i class="ri-map-pin-2-line"></i> Greater Noida, Uttar Pradesh</p>
-          <div class="college-tags">
-            <span class="college-tag naac-aplus">NAAC A</span>
-            <span class="college-tag nirf">NIRF #101-200</span>
-          </div>
-          <div class="college-stats">
-            <div class="college-stat-item">
-              <span class="college-stat-label">Total Fees</span>
-              <span class="college-stat-value">₹16.5 LPA</span>
-            </div>
-            <div class="college-stat-item">
-              <span class="college-stat-label">Avg. Package</span>
-              <span class="college-stat-value">₹7.9 LPA</span>
-            </div>
-            <div class="college-stat-item">
-              <span class="college-stat-label">Highest Pkg</span>
-              <span class="college-stat-value">₹1.37 cr</span>
-            </div>
-          </div>
-          <div class="college-card-actions">
-            <a href="pages/colleges.html" class="college-apply-btn">
-              Apply Now <i class="ri-arrow-right-line"></i>
-            </a>
-            <label class="compare-check">
-              <input type="checkbox"> Compare
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 6-NLU Delhi -->
-      <div class="college-card" data-stream="law">
-        <div class="college-card-banner stream-law">
-          <span class="college-rank-badge">NIRF</span>
-          <button class="college-wishlist-btn" aria-label="Save to wishlist">
-            <i class="ri-heart-line"></i>
-          </button>
-          <div class="college-logo-wrap">
-            <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=1200&q=80" alt="G.L. Bajaj Institute of Technology & Management">
-          </div>
-        </div>
-        <div class="college-card-body">
-          <div class="college-card-header">
-            <h3 class="college-card-name">G.L. Bajaj Institute of Technology & Management</h3>
-            <span class="college-rating-badge"><i class="ri-star-fill"></i> 4.8</span>
-          </div>
-          <p class="college-location"><i class="ri-map-pin-2-line"></i> Greater Noida, Uttar Pradesh</p>
-          <div class="college-tags">
-            <span class="college-tag naac-aplus">NAAC A+</span>
-            <span class="college-tag nirf">NIRF</span>
-          </div>
-          <div class="college-stats">
-            <div class="college-stat-item">
-              <span class="college-stat-label">Total Fees</span>
-              <span class="college-stat-value">₹5.6 L</span>
-            </div>
-            <div class="college-stat-item">
-              <span class="college-stat-label">Avg. Package</span>
-              <span class="college-stat-value">₹6 LPA</span>
-            </div>
-            <div class="college-stat-item">
-              <span class="college-stat-label">Highest Pkg</span>
-              <span class="college-stat-value">₹58 LPA</span>
-            </div>
-          </div>
-          <div class="college-card-actions">
-            <a href="pages/colleges.html" class="college-apply-btn">
-              Apply Now <i class="ri-arrow-right-line"></i>
-            </a>
-            <label class="compare-check">
-              <input type="checkbox"> Compare
-            </label>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /college-card-grid -->
-  </div>
-</section>
-
-<!-- ============================================================
+  <!-- ============================================================
      ENTRANCE EXAMS
      ============================================================ -->
-<section class="exams-section animate-on-scroll">
-  <div class="container">
-    <div class="section-header-row">
-      <div>
-        <div class="section-label"><i class="ri-file-paper-2-line"></i> Entrance Exams</div>
-        <h2 style="font-size: 28px; font-weight:800;">Top Entrance Exams 2026</h2>
-        <p style="color:var(--clr-text-secondary); margin-top:6px; font-size:15px;">Check dates, eligibility, syllabus and result info</p>
+  <section class="exams-section animate-on-scroll">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <div class="section-label"><i class="ri-file-paper-2-line"></i> Entrance Exams</div>
+          <h2 style="font-size: 28px; font-weight:800;">Top Entrance Exams 2026</h2>
+          <p style="color:var(--clr-text-secondary); margin-top:6px; font-size:15px;">Check dates, eligibility, syllabus
+            and result info</p>
+        </div>
+        <a href="#" class="view-all-link">All Exams <i class="ri-arrow-right-line"></i></a>
       </div>
-      <a href="#" class="view-all-link">All Exams <i class="ri-arrow-right-line"></i></a>
+
+      <div class="exam-cards-grid">
+
+        <div class="exam-card">
+          <div class="exam-card-top">
+            <div class="exam-icon" style="background:#eff4ff; color:#1a56db;"><i class="ri-pencil-ruler-2-line"></i>
+            </div>
+            <div>
+              <div class="exam-name">JEE Main 2026</div>
+              <div class="exam-conducting-body">NTA-National Testing Agency</div>
+            </div>
+          </div>
+          <div class="exam-info-row">
+            <div class="exam-info-item"><span class="exam-info-key">Application</span><span class="exam-info-val">Oct
+                2025 – Nov 2025</span></div>
+            <div class="exam-info-item"><span class="exam-info-key">Exam Date</span><span class="exam-info-val">Jan –
+                Feb 2026</span></div>
+            <div class="exam-info-item"><span class="exam-info-key">Eligibility</span><span class="exam-info-val">Class
+                12 PCM</span></div>
+          </div>
+          <a href="#" class="exam-cta">Check Details <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <div class="exam-card">
+          <div class="exam-card-top">
+            <div class="exam-icon" style="background:#f0fdf4; color:#16a34a;"><i class="ri-heart-pulse-line"></i></div>
+            <div>
+              <div class="exam-name">NEET UG 2026</div>
+              <div class="exam-conducting-body">NTA-National Testing Agency</div>
+            </div>
+          </div>
+          <div class="exam-info-row">
+            <div class="exam-info-item"><span class="exam-info-key">Application</span><span class="exam-info-val">Mar
+                2026</span></div>
+            <div class="exam-info-item"><span class="exam-info-key">Exam Date</span><span class="exam-info-val">May
+                2026</span></div>
+            <div class="exam-info-item"><span class="exam-info-key">Eligibility</span><span class="exam-info-val">Class
+                12 PCB</span></div>
+          </div>
+          <a href="#" class="exam-cta">Check Details <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <div class="exam-card">
+          <div class="exam-card-top">
+            <div class="exam-icon" style="background:#faf5ff; color:#9333ea;"><i class="ri-briefcase-4-line"></i></div>
+            <div>
+              <div class="exam-name">CAT 2026</div>
+              <div class="exam-conducting-body">IIMs-Common Admission Test</div>
+            </div>
+          </div>
+          <div class="exam-info-row">
+            <div class="exam-info-item"><span class="exam-info-key">Application</span><span class="exam-info-val">Jul –
+                Sep 2026</span></div>
+            <div class="exam-info-item"><span class="exam-info-key">Exam Date</span><span class="exam-info-val">Nov
+                2026</span></div>
+            <div class="exam-info-item"><span class="exam-info-key">Eligibility</span><span
+                class="exam-info-val">Graduation 50%</span></div>
+          </div>
+          <a href="#" class="exam-cta">Check Details <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <div class="exam-card">
+          <div class="exam-card-top">
+            <div class="exam-icon" style="background:#fffbeb; color:#b45309;"><i class="ri-scales-3-line"></i></div>
+            <div>
+              <div class="exam-name">CLAT 2026</div>
+              <div class="exam-conducting-body">Consortium of NLUs</div>
+            </div>
+          </div>
+          <div class="exam-info-row">
+            <div class="exam-info-item"><span class="exam-info-key">Application</span><span class="exam-info-val">Jul –
+                Nov 2025</span></div>
+            <div class="exam-info-item"><span class="exam-info-key">Exam Date</span><span class="exam-info-val">Dec
+                2025</span></div>
+            <div class="exam-info-item"><span class="exam-info-key">Eligibility</span><span class="exam-info-val">Class
+                12</span></div>
+          </div>
+          <a href="#" class="exam-cta">Check Details <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <div class="exam-cards-grid">
-
-      <div class="exam-card">
-        <div class="exam-card-top">
-          <div class="exam-icon" style="background:#eff4ff; color:#1a56db;"><i class="ri-pencil-ruler-2-line"></i></div>
-          <div>
-            <div class="exam-name">JEE Main 2026</div>
-            <div class="exam-conducting-body">NTA-National Testing Agency</div>
-          </div>
-        </div>
-        <div class="exam-info-row">
-          <div class="exam-info-item"><span class="exam-info-key">Application</span><span class="exam-info-val">Oct 2025 – Nov 2025</span></div>
-          <div class="exam-info-item"><span class="exam-info-key">Exam Date</span><span class="exam-info-val">Jan – Feb 2026</span></div>
-          <div class="exam-info-item"><span class="exam-info-key">Eligibility</span><span class="exam-info-val">Class 12 PCM</span></div>
-        </div>
-        <a href="#" class="exam-cta">Check Details <i class="ri-arrow-right-line"></i></a>
-      </div>
-
-      <div class="exam-card">
-        <div class="exam-card-top">
-          <div class="exam-icon" style="background:#f0fdf4; color:#16a34a;"><i class="ri-heart-pulse-line"></i></div>
-          <div>
-            <div class="exam-name">NEET UG 2026</div>
-            <div class="exam-conducting-body">NTA-National Testing Agency</div>
-          </div>
-        </div>
-        <div class="exam-info-row">
-          <div class="exam-info-item"><span class="exam-info-key">Application</span><span class="exam-info-val">Mar 2026</span></div>
-          <div class="exam-info-item"><span class="exam-info-key">Exam Date</span><span class="exam-info-val">May 2026</span></div>
-          <div class="exam-info-item"><span class="exam-info-key">Eligibility</span><span class="exam-info-val">Class 12 PCB</span></div>
-        </div>
-        <a href="#" class="exam-cta">Check Details <i class="ri-arrow-right-line"></i></a>
-      </div>
-
-      <div class="exam-card">
-        <div class="exam-card-top">
-          <div class="exam-icon" style="background:#faf5ff; color:#9333ea;"><i class="ri-briefcase-4-line"></i></div>
-          <div>
-            <div class="exam-name">CAT 2026</div>
-            <div class="exam-conducting-body">IIMs-Common Admission Test</div>
-          </div>
-        </div>
-        <div class="exam-info-row">
-          <div class="exam-info-item"><span class="exam-info-key">Application</span><span class="exam-info-val">Jul – Sep 2026</span></div>
-          <div class="exam-info-item"><span class="exam-info-key">Exam Date</span><span class="exam-info-val">Nov 2026</span></div>
-          <div class="exam-info-item"><span class="exam-info-key">Eligibility</span><span class="exam-info-val">Graduation 50%</span></div>
-        </div>
-        <a href="#" class="exam-cta">Check Details <i class="ri-arrow-right-line"></i></a>
-      </div>
-
-      <div class="exam-card">
-        <div class="exam-card-top">
-          <div class="exam-icon" style="background:#fffbeb; color:#b45309;"><i class="ri-scales-3-line"></i></div>
-          <div>
-            <div class="exam-name">CLAT 2026</div>
-            <div class="exam-conducting-body">Consortium of NLUs</div>
-          </div>
-        </div>
-        <div class="exam-info-row">
-          <div class="exam-info-item"><span class="exam-info-key">Application</span><span class="exam-info-val">Jul – Nov 2025</span></div>
-          <div class="exam-info-item"><span class="exam-info-key">Exam Date</span><span class="exam-info-val">Dec 2025</span></div>
-          <div class="exam-info-item"><span class="exam-info-key">Eligibility</span><span class="exam-info-val">Class 12</span></div>
-        </div>
-        <a href="#" class="exam-cta">Check Details <i class="ri-arrow-right-line"></i></a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
+  <!-- ============================================================
      TOP UNIVERSITIES RANKED LIST
      ============================================================ -->
-<section class="universities-section animate-on-scroll">
-  <div class="container">
-    <div class="section-header-row">
-      <div>
-        <div class="section-label"><i class="ri-award-line"></i> Rankings 2026</div>
-        <h2 style="font-size: 28px; font-weight:800;">Top Ranked Universities &amp; Colleges</h2>
-        <p style="color:var(--clr-text-secondary); margin-top:6px; font-size:15px;">Based on NIRF 2026, QS Rankings &amp; India Today Survey</p>
+  <section class="universities-section animate-on-scroll">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <div class="section-label"><i class="ri-award-line"></i> Rankings 2026</div>
+          <h2 style="font-size: 28px; font-weight:800;">Top Ranked Universities &amp; Colleges</h2>
+          <p style="color:var(--clr-text-secondary); margin-top:6px; font-size:15px;">Based on NIRF 2026, QS Rankings
+            &amp; India Today Survey</p>
+        </div>
+      </div>
+
+      <div class="uni-cards-grid">
+
+        <!-- Engineering -->
+        <div class="uni-card">
+          <div class="uni-card-header engineering">
+            <i class="ri-building-2-line"></i>
+            <h3>Top Engineering Colleges</h3>
+          </div>
+          <ul class="uni-ranked-list">
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-1">01</span>
+              <span class="uni-name">IIT Madras</span>
+            </li>
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-2">02</span>
+              <span class="uni-name">IIT Delhi</span>
+            </li>
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-3">03</span>
+              <span class="uni-name">IIT Bombay</span>
+            </li>
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-other">04</span>
+              <span class="uni-name">IIT Kanpur</span>
+            </li>
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-other">05</span>
+              <span class="uni-name">NIT Trichy</span>
+            </li>
+          </ul>
+          <a href="pages/colleges.html" class="uni-view-btn">
+            View All Engineering Colleges <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+
+        <!-- Medical -->
+        <div class="uni-card">
+          <div class="uni-card-header medical">
+            <i class="ri-heart-pulse-line"></i>
+            <h3>Top Medical Colleges</h3>
+          </div>
+          <ul class="uni-ranked-list">
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-1">01</span>
+              <span class="uni-name">AIIMS New Delhi</span>
+            </li>
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-2">02</span>
+              <span class="uni-name">PGIMER Chandigarh</span>
+            </li>
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-3">03</span>
+              <span class="uni-name">Christian Medical College, Vellore</span>
+            </li>
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-other">04</span>
+              <span class="uni-name">JIPMER Puducherry</span>
+            </li>
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-other">05</span>
+              <span class="uni-name">Banaras Hindu University</span>
+            </li>
+          </ul>
+          <a href="pages/colleges.html" class="uni-view-btn">
+            View All Medical Colleges <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+
+        <!-- Management -->
+        <div class="uni-card">
+          <div class="uni-card-header management">
+            <i class="ri-bar-chart-2-line"></i>
+            <h3>Top Management Colleges</h3>
+          </div>
+          <ul class="uni-ranked-list">
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-1">01</span>
+              <span class="uni-name">IIM Ahmedabad</span>
+            </li>
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-2">02</span>
+              <span class="uni-name">IIM Bangalore</span>
+            </li>
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-3">03</span>
+              <span class="uni-name">IIM Calcutta</span>
+            </li>
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-other">04</span>
+              <span class="uni-name">IIM Lucknow</span>
+            </li>
+            <li class="uni-ranked-item">
+              <span class="uni-rank-num rank-other">05</span>
+              <span class="uni-name">XLRI Jamshedpur</span>
+            </li>
+          </ul>
+          <a href="pages/colleges.html" class="uni-view-btn">
+            View All Management Colleges <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+
       </div>
     </div>
+  </section>
 
-    <div class="uni-cards-grid">
-
-      <!-- Engineering -->
-      <div class="uni-card">
-        <div class="uni-card-header engineering">
-          <i class="ri-building-2-line"></i>
-          <h3>Top Engineering Colleges</h3>
-        </div>
-        <ul class="uni-ranked-list">
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-1">01</span>
-            <span class="uni-name">IIT Madras</span>
-          </li>
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-2">02</span>
-            <span class="uni-name">IIT Delhi</span>
-          </li>
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-3">03</span>
-            <span class="uni-name">IIT Bombay</span>
-          </li>
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-other">04</span>
-            <span class="uni-name">IIT Kanpur</span>
-          </li>
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-other">05</span>
-            <span class="uni-name">NIT Trichy</span>
-          </li>
-        </ul>
-        <a href="pages/colleges.html" class="uni-view-btn">
-          View All Engineering Colleges <i class="ri-arrow-right-line"></i>
-        </a>
-      </div>
-
-      <!-- Medical -->
-      <div class="uni-card">
-        <div class="uni-card-header medical">
-          <i class="ri-heart-pulse-line"></i>
-          <h3>Top Medical Colleges</h3>
-        </div>
-        <ul class="uni-ranked-list">
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-1">01</span>
-            <span class="uni-name">AIIMS New Delhi</span>
-          </li>
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-2">02</span>
-            <span class="uni-name">PGIMER Chandigarh</span>
-          </li>
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-3">03</span>
-            <span class="uni-name">Christian Medical College, Vellore</span>
-          </li>
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-other">04</span>
-            <span class="uni-name">JIPMER Puducherry</span>
-          </li>
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-other">05</span>
-            <span class="uni-name">Banaras Hindu University</span>
-          </li>
-        </ul>
-        <a href="pages/colleges.html" class="uni-view-btn">
-          View All Medical Colleges <i class="ri-arrow-right-line"></i>
-        </a>
-      </div>
-
-      <!-- Management -->
-      <div class="uni-card">
-        <div class="uni-card-header management">
-          <i class="ri-bar-chart-2-line"></i>
-          <h3>Top Management Colleges</h3>
-        </div>
-        <ul class="uni-ranked-list">
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-1">01</span>
-            <span class="uni-name">IIM Ahmedabad</span>
-          </li>
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-2">02</span>
-            <span class="uni-name">IIM Bangalore</span>
-          </li>
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-3">03</span>
-            <span class="uni-name">IIM Calcutta</span>
-          </li>
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-other">04</span>
-            <span class="uni-name">IIM Lucknow</span>
-          </li>
-          <li class="uni-ranked-item">
-            <span class="uni-rank-num rank-other">05</span>
-            <span class="uni-name">XLRI Jamshedpur</span>
-          </li>
-        </ul>
-        <a href="pages/colleges.html" class="uni-view-btn">
-          View All Management Colleges <i class="ri-arrow-right-line"></i>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
+  <!-- ============================================================
      ADMISSION PREDICTOR BANNER
      ============================================================ -->
-<section class="admission-banner-section animate-on-scroll">
-  <div class="container">
-    <div class="admission-banner">
-      <div class="admission-banner-text">
-        <div class="admission-badge">
-          <i class="ri-shield-check-fill"></i> Admission 2026-Free Tool
+  <section class="admission-banner-section animate-on-scroll">
+    <div class="container">
+      <div class="admission-banner">
+        <div class="admission-banner-text">
+          <div class="admission-badge">
+            <i class="ri-shield-check-fill"></i> Admission 2026-Free Tool
+          </div>
+          <h2>Know Your Chances of Getting Admission</h2>
+          <p>Get personalized admission predictions based on your exam score, category, and preferred stream. We've
+            helped over 5 lakh students find their ideal college.</p>
         </div>
-        <h2>Know Your Chances of Getting Admission</h2>
-        <p>Get personalized admission predictions based on your exam score, category, and preferred stream. We've helped over 5 lakh students find their ideal college.</p>
-      </div>
-      <div class="admission-predictor-form">
-        <div class="predictor-form-title">Predict Your College Now</div>
-        <div class="predictor-field">
-          <label>Entrance Exam</label>
-          <select>
-            <option value="">Select Exam</option>
-            <option>JEE Main</option>
-            <option>JEE Advanced</option>
-            <option>NEET UG</option>
-            <option>CAT</option>
-            <option>CLAT</option>
-            <option>GATE</option>
-          </select>
+        <div class="admission-predictor-form">
+          <div class="predictor-form-title">Predict Your College Now</div>
+          <div class="predictor-field">
+            <label>Entrance Exam</label>
+            <select>
+              <option value="">Select Exam</option>
+              <option>JEE Main</option>
+              <option>JEE Advanced</option>
+              <option>NEET UG</option>
+              <option>CAT</option>
+              <option>CLAT</option>
+              <option>GATE</option>
+            </select>
+          </div>
+          <div class="predictor-field">
+            <label>Your Score / Percentile</label>
+            <input type="number" placeholder="e.g. 95.5 percentile">
+          </div>
+          <div class="predictor-field">
+            <label>Category</label>
+            <select>
+              <option value="">Select Category</option>
+              <option>General</option>
+              <option>OBC</option>
+              <option>SC</option>
+              <option>ST</option>
+              <option>EWS</option>
+            </select>
+          </div>
+          <button class="predictor-submit">
+            <i class="ri-search-eye-line"></i> Predict My College
+          </button>
         </div>
-        <div class="predictor-field">
-          <label>Your Score / Percentile</label>
-          <input type="number" placeholder="e.g. 95.5 percentile">
-        </div>
-        <div class="predictor-field">
-          <label>Category</label>
-          <select>
-            <option value="">Select Category</option>
-            <option>General</option>
-            <option>OBC</option>
-            <option>SC</option>
-            <option>ST</option>
-            <option>EWS</option>
-          </select>
-        </div>
-        <button class="predictor-submit">
-          <i class="ri-search-eye-line"></i> Predict My College
-        </button>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============================================================
+  <!-- ============================================================
      ENGINEERING COURSES (TABBED)
      ============================================================ -->
-<section class="courses-section animate-on-scroll">
-  <div class="container">
-    <div class="section-heading">
-      <div class="section-label"><i class="ri-book-2-line"></i> Engineering Programs</div>
-      <h2>Explore Engineering Courses</h2>
-      <p>Undergraduate, postgraduate, doctoral, and diploma programs designed for future innovators.</p>
-    </div>
+  <section class="courses-section animate-on-scroll">
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-label"><i class="ri-book-2-line"></i> Engineering Programs</div>
+        <h2>Explore Engineering Courses</h2>
+        <p>Undergraduate, postgraduate, doctoral, and diploma programs designed for future innovators.</p>
+      </div>
 
-    <!-- Course Tabs -->
-    <div class="course-tabs-row">
-      <button class="tab-btn active" data-tab="bachelors">Bachelors</button>
-      <button class="tab-btn" data-tab="masters">Masters</button>
-      <button class="tab-btn" data-tab="doctorate">Doctorate</button>
-      <button class="tab-btn" data-tab="diploma">Diploma</button>
-    </div>
+      <!-- Course Tabs -->
+      <div class="course-tabs-row">
+        <button class="tab-btn active" data-tab="bachelors">Bachelors</button>
+        <button class="tab-btn" data-tab="masters">Masters</button>
+        <button class="tab-btn" data-tab="doctorate">Doctorate</button>
+        <button class="tab-btn" data-tab="diploma">Diploma</button>
+      </div>
 
-    <!-- Bachelors -->
-    <div class="course-content active" id="bachelors">
-      <div class="course-grid">
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-code-box-line"></i></div>
-          <h3>Computer Science</h3>
-          <p>B.Tech-4 Years</p>
+      <!-- Bachelors -->
+      <div class="course-content active" id="bachelors">
+        <div class="course-grid">
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-code-box-line"></i></div>
+            <h3>Computer Science</h3>
+            <p>B.Tech-4 Years</p>
+          </div>
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-settings-3-line"></i></div>
+            <h3>Mechanical Engineering</h3>
+            <p>B.Tech-4 Years</p>
+          </div>
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-flashlight-line"></i></div>
+            <h3>Electrical Engineering</h3>
+            <p>B.Tech-4 Years</p>
+          </div>
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-community-line"></i></div>
+            <h3>Civil Engineering</h3>
+            <p>B.Tech-4 Years</p>
+          </div>
         </div>
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-settings-3-line"></i></div>
-          <h3>Mechanical Engineering</h3>
-          <p>B.Tech-4 Years</p>
+      </div>
+
+      <!-- Masters -->
+      <div class="course-content" id="masters">
+        <div class="course-grid">
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-cpu-line"></i></div>
+            <h3>M.Tech AI</h3>
+            <p>Masters-2 Years</p>
+          </div>
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-router-line"></i></div>
+            <h3>Network Engineering</h3>
+            <p>Masters-2 Years</p>
+          </div>
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-stack-line"></i></div>
+            <h3>Systems Engineering</h3>
+            <p>Masters-2 Years</p>
+          </div>
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-smartphone-line"></i></div>
+            <h3>Software Engineering</h3>
+            <p>Masters-2 Years</p>
+          </div>
         </div>
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-flashlight-line"></i></div>
-          <h3>Electrical Engineering</h3>
-          <p>B.Tech-4 Years</p>
+      </div>
+
+      <!-- Doctorate -->
+      <div class="course-content" id="doctorate">
+        <div class="course-grid">
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-microscope-line"></i></div>
+            <h3>PhD Computer Science</h3>
+            <p>Research-3–5 Years</p>
+          </div>
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-robot-line"></i></div>
+            <h3>AI &amp; Robotics</h3>
+            <p>Research-3–5 Years</p>
+          </div>
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-database-2-line"></i></div>
+            <h3>Data Science</h3>
+            <p>Research-3–5 Years</p>
+          </div>
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-leaf-line"></i></div>
+            <h3>Renewable Energy</h3>
+            <p>Research-3–5 Years</p>
+          </div>
         </div>
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-community-line"></i></div>
-          <h3>Civil Engineering</h3>
-          <p>B.Tech-4 Years</p>
+      </div>
+
+      <!-- Diploma -->
+      <div class="course-content" id="diploma">
+        <div class="course-grid">
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-tools-line"></i></div>
+            <h3>Mechanical Engineering</h3>
+            <p>Diploma-3 Years</p>
+          </div>
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-code-box-line"></i></div>
+            <h3>Computer Engineering</h3>
+            <p>Diploma-3 Years</p>
+          </div>
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-flashlight-line"></i></div>
+            <h3>Electrical Engineering</h3>
+            <p>Diploma-3 Years</p>
+          </div>
+          <div class="course-card">
+            <div class="course-card-icon-wrap"><i class="ri-building-4-line"></i></div>
+            <h3>Civil Engineering</h3>
+            <p>Diploma-3 Years</p>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Masters -->
-    <div class="course-content" id="masters">
-      <div class="course-grid">
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-cpu-line"></i></div>
-          <h3>M.Tech AI</h3>
-          <p>Masters-2 Years</p>
-        </div>
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-router-line"></i></div>
-          <h3>Network Engineering</h3>
-          <p>Masters-2 Years</p>
-        </div>
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-stack-line"></i></div>
-          <h3>Systems Engineering</h3>
-          <p>Masters-2 Years</p>
-        </div>
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-smartphone-line"></i></div>
-          <h3>Software Engineering</h3>
-          <p>Masters-2 Years</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Doctorate -->
-    <div class="course-content" id="doctorate">
-      <div class="course-grid">
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-microscope-line"></i></div>
-          <h3>PhD Computer Science</h3>
-          <p>Research-3–5 Years</p>
-        </div>
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-robot-line"></i></div>
-          <h3>AI &amp; Robotics</h3>
-          <p>Research-3–5 Years</p>
-        </div>
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-database-2-line"></i></div>
-          <h3>Data Science</h3>
-          <p>Research-3–5 Years</p>
-        </div>
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-leaf-line"></i></div>
-          <h3>Renewable Energy</h3>
-          <p>Research-3–5 Years</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Diploma -->
-    <div class="course-content" id="diploma">
-      <div class="course-grid">
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-tools-line"></i></div>
-          <h3>Mechanical Engineering</h3>
-          <p>Diploma-3 Years</p>
-        </div>
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-code-box-line"></i></div>
-          <h3>Computer Engineering</h3>
-          <p>Diploma-3 Years</p>
-        </div>
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-flashlight-line"></i></div>
-          <h3>Electrical Engineering</h3>
-          <p>Diploma-3 Years</p>
-        </div>
-        <div class="course-card">
-          <div class="course-card-icon-wrap"><i class="ri-building-4-line"></i></div>
-          <h3>Civil Engineering</h3>
-          <p>Diploma-3 Years</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
+  <!-- ============================================================
      CITY EXPLORER
      ============================================================ -->
-<section class="cities-section animate-on-scroll">
-  <div class="container">
-    <div class="section-header-row">
-      <div>
-        <div class="section-label"><i class="ri-map-2-line"></i> City Explorer</div>
-        <h2 style="font-size: 28px; font-weight:800;">Colleges by City</h2>
-        <p style="color:var(--clr-text-secondary); margin-top:6px; font-size:15px;">Explore top-rated colleges in India's major education hubs</p>
+  <section class="cities-section animate-on-scroll">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <div class="section-label"><i class="ri-map-2-line"></i> City Explorer</div>
+          <h2 style="font-size: 28px; font-weight:800;">Colleges by City</h2>
+          <p style="color:var(--clr-text-secondary); margin-top:6px; font-size:15px;">Explore top-rated colleges in
+            India's major education hubs</p>
+        </div>
+      </div>
+
+      <div class="cities-grid">
+        <a href="pages/colleges.html" class="city-card">
+          <div class="city-card-bg">
+            <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&q=80" alt="New Delhi">
+          </div>
+          <div class="city-card-overlay"></div>
+          <div class="city-card-info">
+            <div class="city-name">New Delhi</div>
+            <div class="city-college-count">1,240+ Colleges</div>
+          </div>
+        </a>
+        <a href="pages/colleges.html" class="city-card">
+          <div class="city-card-bg">
+            <img
+              src="https://images.unsplash.com/photo-1660145416818-b9a2b1a1f193?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bXVtYmFpfGVufDB8fDB8fHww"
+              alt="Mumbai">
+          </div>
+          <div class="city-card-overlay"></div>
+          <div class="city-card-info">
+            <div class="city-name">Mumbai</div>
+            <div class="city-college-count">980+ Colleges</div>
+          </div>
+        </a>
+        <a href="pages/colleges.html" class="city-card">
+          <div class="city-card-bg">
+            <img
+              src="https://images.unsplash.com/photo-1709967884183-7ffa9d168508?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmVuZ2FsdXJ1fGVufDB8fDB8fHww"
+              alt="Bangalore">
+          </div>
+          <div class="city-card-overlay"></div>
+          <div class="city-card-info">
+            <div class="city-name">Bangalore</div>
+            <div class="city-college-count">1,100+ Colleges</div>
+          </div>
+        </a>
+        <a href="pages/colleges.html" class="city-card">
+          <div class="city-card-bg">
+            <img
+              src="https://images.unsplash.com/photo-1637080618498-b4a1cad84ae0?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hlbm5haXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Chennai">
+          </div>
+          <div class="city-card-overlay"></div>
+          <div class="city-card-info">
+            <div class="city-name">Chennai</div>
+            <div class="city-college-count">760+ Colleges</div>
+          </div>
+        </a>
+        <a href="pages/colleges.html" class="city-card">
+          <div class="city-card-bg">
+            <img
+              src="https://images.unsplash.com/photo-1551161242-b5af797b7233?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHlkZXJhYmFkfGVufDB8fDB8fHww"
+              alt="Hyderabad">
+          </div>
+          <div class="city-card-info">
+            <div class="city-name">Hyderabad</div>
+            <div class="city-college-count">840+ Colleges</div>
+          </div>
+        </a>
+        <a href="pages/colleges.html" class="city-card">
+          <div class="city-card-bg">
+            <img
+              src="https://img.magnific.com/premium-photo/aerial-view-pune-city-maharashtra-india-skyscrapers-modern-architecture-dominate_1268487-11926.jpg?w=360"
+              alt="Pune">
+          </div>
+          <div class="city-card-overlay"></div>
+          <div class="city-card-info">
+            <div class="city-name">Pune</div>
+            <div class="city-college-count">920+ Colleges</div>
+          </div>
+        </a>
+        <a href="pages/colleges.html" class="city-card">
+          <div class="city-card-bg">
+            <img
+              src="https://images.unsplash.com/photo-1677307816181-1446ab18913e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGtvbGthdGF8ZW58MHx8MHx8fDA%3D"
+              alt="Kolkata">
+          </div>
+          <div class="city-card-overlay"></div>
+          <div class="city-card-info">
+            <div class="city-name">Kolkata</div>
+            <div class="city-college-count">680+ Colleges</div>
+          </div>
+        </a>
+        <a href="pages/colleges.html" class="city-card">
+          <div class="city-card-bg">
+            <img
+              src="https://images.unsplash.com/photo-1661437964716-7cf951397407?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFobWVkYWJhZHxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Ahmedabad">
+          </div>
+          <div class="city-card-overlay"></div>
+          <div class="city-card-info">
+            <div class="city-name">Ahmedabad</div>
+            <div class="city-college-count">540+ Colleges</div>
+          </div>
+        </a>
       </div>
     </div>
+  </section>
 
-    <div class="cities-grid">
-      <a href="pages/colleges.html" class="city-card">
-              <div class="city-card-bg">
-                  <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&q=80" alt="New Delhi">
-              </div>
-             <div class="city-card-overlay"></div>
-             <div class="city-card-info">
-               <div class="city-name">New Delhi</div>
-                 <div class="city-college-count">1,240+ Colleges</div>
-            </div>
-          </a>
-      <a href="pages/colleges.html" class="city-card">
-        <div class="city-card-bg">
-                  <img src="https://images.unsplash.com/photo-1660145416818-b9a2b1a1f193?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bXVtYmFpfGVufDB8fDB8fHww" alt="Mumbai">
-              </div>
-        <div class="city-card-overlay"></div>
-        <div class="city-card-info">
-          <div class="city-name">Mumbai</div>
-          <div class="city-college-count">980+ Colleges</div>
-        </div>
-      </a>
-      <a href="pages/colleges.html" class="city-card">
-        <div class="city-card-bg">
-                  <img src="https://images.unsplash.com/photo-1709967884183-7ffa9d168508?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmVuZ2FsdXJ1fGVufDB8fDB8fHww" alt="Bangalore">
-              </div>
-        <div class="city-card-overlay"></div>
-        <div class="city-card-info">
-          <div class="city-name">Bangalore</div>
-          <div class="city-college-count">1,100+ Colleges</div>
-        </div>
-      </a>
-      <a href="pages/colleges.html" class="city-card">
-        <div class="city-card-bg">
-                  <img src="https://images.unsplash.com/photo-1637080618498-b4a1cad84ae0?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hlbm5haXxlbnwwfHwwfHx8MA%3D%3D" alt="Chennai">
-              </div>
-        <div class="city-card-overlay"></div>
-        <div class="city-card-info">
-          <div class="city-name">Chennai</div>
-          <div class="city-college-count">760+ Colleges</div>
-        </div>
-      </a>
-      <a href="pages/colleges.html" class="city-card">
-        <div class="city-card-bg">
-                  <img src="https://images.unsplash.com/photo-1551161242-b5af797b7233?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHlkZXJhYmFkfGVufDB8fDB8fHww" alt="Hyderabad">
-              </div>
-        <div class="city-card-info">
-          <div class="city-name">Hyderabad</div>
-          <div class="city-college-count">840+ Colleges</div>
-        </div>
-      </a>
-      <a href="pages/colleges.html" class="city-card">
-       <div class="city-card-bg">
-                  <img src="https://img.magnific.com/premium-photo/aerial-view-pune-city-maharashtra-india-skyscrapers-modern-architecture-dominate_1268487-11926.jpg?w=360" alt="Pune">
-              </div>
-        <div class="city-card-overlay"></div>
-        <div class="city-card-info">
-          <div class="city-name">Pune</div>
-          <div class="city-college-count">920+ Colleges</div>
-        </div>
-      </a>
-      <a href="pages/colleges.html" class="city-card">
-        <div class="city-card-bg">
-                  <img src="https://images.unsplash.com/photo-1677307816181-1446ab18913e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGtvbGthdGF8ZW58MHx8MHx8fDA%3D" alt="Kolkata">
-              </div>
-        <div class="city-card-overlay"></div>
-        <div class="city-card-info">
-          <div class="city-name">Kolkata</div>
-          <div class="city-college-count">680+ Colleges</div>
-        </div>
-      </a>
-      <a href="pages/colleges.html" class="city-card">
-       <div class="city-card-bg">
-                  <img src="https://images.unsplash.com/photo-1661437964716-7cf951397407?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFobWVkYWJhZHxlbnwwfHwwfHx8MA%3D%3D" alt="Ahmedabad">
-              </div>
-        <div class="city-card-overlay"></div>
-        <div class="city-card-info">
-          <div class="city-name">Ahmedabad</div>
-          <div class="city-college-count">540+ Colleges</div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
+  <!-- ============================================================
      SPECIALIZATIONS SECTION
      ============================================================ -->
-<section class="specialization-section animate-on-scroll">
-  <div class="container">
-    <div class="section-heading">
-      <div class="section-label"><i class="ri-list-check-3"></i> All Programs</div>
-      <h2>Top Specializations for Diploma in Engineering</h2>
-      <p>Explore our industry-focused diploma and B.Tech specializations designed for future career growth.</p>
+  <section class="specialization-section animate-on-scroll">
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-label"><i class="ri-list-check-3"></i> All Programs</div>
+        <h2>Top Specializations for Diploma in Engineering</h2>
+        <p>Explore our industry-focused diploma and B.Tech specializations designed for future career growth.</p>
+      </div>
+      <div class="specialization-pills">
+        <a href="pages/colleges.html" class="specialization-pill">Design Engineering</a>
+        <a href="pages/colleges.html" class="specialization-pill">Mechanical Engineering</a>
+        <a href="pages/colleges.html" class="specialization-pill">Electrical Engineering</a>
+        <a href="pages/colleges.html" class="specialization-pill">Industrial Engineering</a>
+        <a href="pages/colleges.html" class="specialization-pill">Computer Science</a>
+        <a href="pages/colleges.html" class="specialization-pill">Civil Engineering</a>
+        <a href="pages/colleges.html" class="specialization-pill">Textile Engineering</a>
+        <a href="pages/colleges.html" class="specialization-pill">Network Engineering</a>
+        <a href="pages/colleges.html" class="specialization-pill">Water Resource Management</a>
+        <a href="pages/colleges.html" class="specialization-pill">Mobile App Development</a>
+        <a href="pages/colleges.html" class="specialization-pill">Electronics</a>
+        <a href="pages/colleges.html" class="specialization-pill">Electronics &amp; Communication</a>
+        <a href="pages/colleges.html" class="specialization-pill">Manufacturing Engineering</a>
+        <a href="pages/colleges.html" class="specialization-pill">Systems Engineering</a>
+        <a href="pages/colleges.html" class="specialization-pill">Internet of Things</a>
+        <a href="pages/colleges.html" class="specialization-pill">Information Technology</a>
+        <a href="pages/colleges.html" class="specialization-pill">Energy Engineering</a>
+        <a href="pages/colleges.html" class="specialization-pill">Fashion Technology</a>
+      </div>
     </div>
-    <div class="specialization-pills">
-      <a href="pages/colleges.html" class="specialization-pill">Design Engineering</a>
-      <a href="pages/colleges.html" class="specialization-pill">Mechanical Engineering</a>
-      <a href="pages/colleges.html" class="specialization-pill">Electrical Engineering</a>
-      <a href="pages/colleges.html" class="specialization-pill">Industrial Engineering</a>
-      <a href="pages/colleges.html" class="specialization-pill">Computer Science</a>
-      <a href="pages/colleges.html" class="specialization-pill">Civil Engineering</a>
-      <a href="pages/colleges.html" class="specialization-pill">Textile Engineering</a>
-      <a href="pages/colleges.html" class="specialization-pill">Network Engineering</a>
-      <a href="pages/colleges.html" class="specialization-pill">Water Resource Management</a>
-      <a href="pages/colleges.html" class="specialization-pill">Mobile App Development</a>
-      <a href="pages/colleges.html" class="specialization-pill">Electronics</a>
-      <a href="pages/colleges.html" class="specialization-pill">Electronics &amp; Communication</a>
-      <a href="pages/colleges.html" class="specialization-pill">Manufacturing Engineering</a>
-      <a href="pages/colleges.html" class="specialization-pill">Systems Engineering</a>
-      <a href="pages/colleges.html" class="specialization-pill">Internet of Things</a>
-      <a href="pages/colleges.html" class="specialization-pill">Information Technology</a>
-      <a href="pages/colleges.html" class="specialization-pill">Energy Engineering</a>
-      <a href="pages/colleges.html" class="specialization-pill">Fashion Technology</a>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============================================================
+  <!-- ============================================================
      NEWSLETTER SECTION
      ============================================================ -->
-<section class="newsletter-section animate-on-scroll">
-  <div class="container">
-    <div class="newsletter-card">
-      <div class="newsletter-text">
-        <div class="newsletter-eyebrow">
-          <i class="ri-notification-3-fill"></i> Stay Updated
+  <section class="newsletter-section animate-on-scroll">
+    <div class="container">
+      <div class="newsletter-card">
+        <div class="newsletter-text">
+          <div class="newsletter-eyebrow">
+            <i class="ri-notification-3-fill"></i> Stay Updated
+          </div>
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get college notifications, exam alerts, admission deadlines, and the latest education news delivered to
+            your inbox-free.</p>
         </div>
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>Get college notifications, exam alerts, admission deadlines, and the latest education news delivered to your inbox-free.</p>
-      </div>
-      <div class="newsletter-form-side">
-        <form class="newsletter-form" onsubmit="return false;">
-          <input type="email" class="nl-input" placeholder="Enter your email address">
-          <input type="tel" class="nl-input" placeholder="Enter your mobile number">
-          <select class="nl-select">
-            <option value="">Choose your course of interest</option>
-            <option>B.Tech / Engineering</option>
-            <option>MBBS / Medical</option>
-            <option>MBA / Management</option>
-            <option>Law</option>
-            <option>Science</option>
-            <option>Commerce</option>
-          </select>
-          <button class="nl-submit">
-            <i class="ri-send-plane-fill"></i> Subscribe Now
-          </button>
-        </form>
+        <div class="newsletter-form-side">
+          <form class="newsletter-form" onsubmit="return false;">
+            <input type="email" class="nl-input" placeholder="Enter your email address">
+            <input type="tel" class="nl-input" placeholder="Enter your mobile number">
+            <select class="nl-select">
+              <option value="">Choose your course of interest</option>
+              <option>B.Tech / Engineering</option>
+              <option>MBBS / Medical</option>
+              <option>MBA / Management</option>
+              <option>Law</option>
+              <option>Science</option>
+              <option>Commerce</option>
+            </select>
+            <button class="nl-submit">
+              <i class="ri-send-plane-fill"></i> Subscribe Now
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============================================================
+  <!-- ============================================================
      EDUCATION LINKS SECTION
      ============================================================ -->
-<section class="education-links-section">
-  <div class="container">
-    <div class="edu-links-grid">
-      <div class="edu-link-column">
-        <h3>Top Colleges</h3>
-        <a href="pages/colleges.html">MBA Colleges</a>
-        <a href="pages/colleges.html">B.Tech / B.E Colleges</a>
-        <a href="pages/colleges.html">MCA Colleges</a>
-        <a href="pages/colleges.html">BCA Colleges</a>
-        <a href="pages/colleges.html">M.Tech Colleges</a>
-        <a href="pages/colleges.html">MA Colleges</a>
-        <a href="pages/colleges.html">BA Colleges</a>
+  <section class="education-links-section">
+    <div class="container">
+      <div class="edu-links-grid">
+        <div class="edu-link-column">
+          <h3>Top Colleges</h3>
+          <a href="pages/colleges.html">MBA Colleges</a>
+          <a href="pages/colleges.html">B.Tech / B.E Colleges</a>
+          <a href="pages/colleges.html">MCA Colleges</a>
+          <a href="pages/colleges.html">BCA Colleges</a>
+          <a href="pages/colleges.html">M.Tech Colleges</a>
+          <a href="pages/colleges.html">MA Colleges</a>
+          <a href="pages/colleges.html">BA Colleges</a>
+        </div>
+        <div class="edu-link-column">
+          <h3>Top Universities</h3>
+          <a href="pages/colleges.html">Engineering Universities</a>
+          <a href="pages/colleges.html">Management Universities</a>
+          <a href="pages/colleges.html">Medical Universities</a>
+          <a href="pages/colleges.html">Law Universities</a>
+          <a href="pages/colleges.html">Commerce Universities</a>
+          <a href="pages/colleges.html">Science Universities</a>
+          <a href="pages/colleges.html">Arts Universities</a>
+        </div>
+        <div class="edu-link-column">
+          <h3>Top Exams</h3>
+          <a href="#">CAT Exam</a>
+          <a href="#">GATE Exam</a>
+          <a href="#">JEE Main</a>
+          <a href="#">NEET UG</a>
+          <a href="#">XAT Exam</a>
+          <a href="#">CLAT Exam</a>
+          <a href="#">MAT Exam</a>
+        </div>
+        <div class="edu-link-column">
+          <h3>Board Exams</h3>
+          <a href="#">CBSE Class 12</a>
+          <a href="#">CBSE Class 12 Results</a>
+          <a href="#">CBSE Class 12 Syllabus</a>
+          <a href="#">CBSE Class 12 Exam Dates</a>
+          <a href="#">CBSE Class 10</a>
+          <a href="#">CBSE Class 10 Result</a>
+          <a href="#">CBSE Class 10 Syllabus</a>
+        </div>
       </div>
-      <div class="edu-link-column">
-        <h3>Top Universities</h3>
-        <a href="pages/colleges.html">Engineering Universities</a>
-        <a href="pages/colleges.html">Management Universities</a>
-        <a href="pages/colleges.html">Medical Universities</a>
-        <a href="pages/colleges.html">Law Universities</a>
-        <a href="pages/colleges.html">Commerce Universities</a>
-        <a href="pages/colleges.html">Science Universities</a>
-        <a href="pages/colleges.html">Arts Universities</a>
+    </div>
+  </section>
+
+  <!-- Quick Links Card -->
+  <div class="quick-links-card">
+    <div class="container">
+      <div class="quick-links-header">
+        <div class="quick-links-badge"><i class="ri-flashlight-fill"></i> Quick Access</div>
+        <div class="quick-links-title">Other Links</div>
       </div>
-      <div class="edu-link-column">
-        <h3>Top Exams</h3>
-        <a href="#">CAT Exam</a>
-        <a href="#">GATE Exam</a>
-        <a href="#">JEE Main</a>
-        <a href="#">NEET UG</a>
-        <a href="#">XAT Exam</a>
-        <a href="#">CLAT Exam</a>
-        <a href="#">MAT Exam</a>
-      </div>
-      <div class="edu-link-column">
-        <h3>Board Exams</h3>
-        <a href="#">CBSE Class 12</a>
-        <a href="#">CBSE Class 12 Results</a>
-        <a href="#">CBSE Class 12 Syllabus</a>
-        <a href="#">CBSE Class 12 Exam Dates</a>
-        <a href="#">CBSE Class 10</a>
-        <a href="#">CBSE Class 10 Result</a>
-        <a href="#">CBSE Class 10 Syllabus</a>
+      <div class="quick-links-grid">
+        <a href="#" class="quick-link">About Us</a>
+        <a href="pages/contact.html" class="quick-link">Contact Us</a>
+        <a href="pages/colleges.html" class="quick-link">Admissions</a>
+        <a href="#" class="quick-link">Scholarships</a>
+        <a href="#" class="quick-link">Careers</a>
+        <a href="#" class="quick-link">FAQs</a>
+        <a href="#" class="quick-link">Terms &amp; Conditions</a>
+        <a href="#" class="quick-link">Privacy Policy</a>
+        <a href="#" class="quick-link">Sitemap</a>
+        <a href="#" class="quick-link">Study Abroad</a>
+        <a href="#" class="quick-link">Scholarships 2026</a>
+        <a href="#" class="quick-link">College Predictor</a>
       </div>
     </div>
   </div>
-</section>
 
-<!-- Quick Links Card -->
-<div class="quick-links-card">
-  <div class="container">
-    <div class="quick-links-header">
-      <div class="quick-links-badge"><i class="ri-flashlight-fill"></i> Quick Access</div>
-      <div class="quick-links-title">Other Links</div>
-    </div>
-    <div class="quick-links-grid">
-      <a href="#" class="quick-link">About Us</a>
-      <a href="pages/contact.html" class="quick-link">Contact Us</a>
-      <a href="pages/colleges.html" class="quick-link">Admissions</a>
-      <a href="#" class="quick-link">Scholarships</a>
-      <a href="#" class="quick-link">Careers</a>
-      <a href="#" class="quick-link">FAQs</a>
-      <a href="#" class="quick-link">Terms &amp; Conditions</a>
-      <a href="#" class="quick-link">Privacy Policy</a>
-      <a href="#" class="quick-link">Sitemap</a>
-      <a href="#" class="quick-link">Study Abroad</a>
-      <a href="#" class="quick-link">Scholarships 2026</a>
-      <a href="#" class="quick-link">College Predictor</a>
-    </div>
-  </div>
-</div>
-
-<!-- ============================================================
+  <!-- ============================================================
      MAIN FOOTER
      ============================================================ -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
 
-      <!-- Brand -->
-      <div class="footer-brand">
-        <a href="index.html" class="footer-logo">
-          <div class="footer-logo-icon"><img src="images/logo.png" alt=""></div>
-          <div class="footer-logo-text">Future<span>Colleges</span></div>
-        </a>
-        <p class="footer-description">India's most comprehensive college discovery platform. Compare colleges, check admissions, explore courses and build your future-all in one place.</p>
-        <div class="footer-social">
-          <div class="social-icon"><i class="ri-facebook-fill"></i></div>
-          <div class="social-icon"><i class="ri-twitter-x-fill"></i></div>
-          <div class="social-icon"><i class="ri-instagram-line"></i></div>
-          <div class="social-icon"><i class="ri-linkedin-fill"></i></div>
-          <div class="social-icon"><i class="ri-youtube-fill"></i></div>
-        </div>
-      </div>
-
-      <!-- Top Colleges -->
-      <div>
-        <div class="footer-col-title">Top Colleges</div>
-        <div class="footer-links">
-          <a href="pages/colleges.html">IITs Admission</a>
-          <a href="pages/colleges.html">NITs Admission</a>
-          <a href="pages/colleges.html">AIIMS Admission</a>
-          <a href="pages/colleges.html">IIMs Admission</a>
-          <a href="pages/colleges.html">NLUs Admission</a>
-          <a href="pages/colleges.html">Top Private Colleges</a>
-          <a href="pages/colleges.html">Deemed Universities</a>
-        </div>
-      </div>
-
-      <!-- Top Exams -->
-      <div>
-        <div class="footer-col-title">Top Exams</div>
-        <div class="footer-links">
-          <a href="#">JEE Main 2026</a>
-          <a href="#">NEET UG 2026</a>
-          <a href="#">CAT 2026</a>
-          <a href="#">CLAT 2026</a>
-          <a href="#">GATE 2026</a>
-          <a href="#">XAT 2026</a>
-          <a href="#">BITSAT 2026</a>
-        </div>
-      </div>
-
-      <!-- Useful Links -->
-      <div>
-        <div class="footer-col-title">Useful Links</div>
-        <div class="footer-links">
-          <a href="#">College Predictor</a>
-          <a href="#">Rank Predictor</a>
-          <a href="#">Scholarships 2026</a>
-          <a href="#">Study Abroad</a>
-          <a href="#">Education Loans</a>
-          <a href="#">Career Counselling</a>
-          <a href="pages/login.html">Student Login</a>
-        </div>
-      </div>
-
-      <!-- App & Contact -->
-      <div class="footer-app-section">
-        <div class="app-download-title">Download Our App</div>
-        <div class="app-badges">
-          <a href="#" class="app-badge">
-            <i class="ri-google-play-fill"></i>
-            <div class="app-badge-text">
-              <small>Get it on</small>
-              <strong>Google Play</strong>
-            </div>
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <div class="footer-logo-icon"><img src="images/logo.png" alt=""></div>
+            <div class="footer-logo-text">Future<span>Colleges</span></div>
           </a>
-          <a href="#" class="app-badge">
-            <i class="ri-apple-fill"></i>
-            <div class="app-badge-text">
-              <small>Download on</small>
-              <strong>App Store</strong>
+          <p class="footer-description">India's most comprehensive college discovery platform. Compare colleges, check
+            admissions, explore courses and build your future-all in one place.</p>
+          <div class="footer-social">
+            <div class="social-icon"><i class="ri-facebook-fill"></i></div>
+            <div class="social-icon"><i class="ri-twitter-x-fill"></i></div>
+            <div class="social-icon"><i class="ri-instagram-line"></i></div>
+            <div class="social-icon"><i class="ri-linkedin-fill"></i></div>
+            <div class="social-icon"><i class="ri-youtube-fill"></i></div>
+          </div>
+        </div>
+
+        <!-- Top Colleges -->
+        <div>
+          <div class="footer-col-title">Top Colleges</div>
+          <div class="footer-links">
+            <a href="pages/colleges.html">IITs Admission</a>
+            <a href="pages/colleges.html">NITs Admission</a>
+            <a href="pages/colleges.html">AIIMS Admission</a>
+            <a href="pages/colleges.html">IIMs Admission</a>
+            <a href="pages/colleges.html">NLUs Admission</a>
+            <a href="pages/colleges.html">Top Private Colleges</a>
+            <a href="pages/colleges.html">Deemed Universities</a>
+          </div>
+        </div>
+
+        <!-- Top Exams -->
+        <div>
+          <div class="footer-col-title">Top Exams</div>
+          <div class="footer-links">
+            <a href="#">JEE Main 2026</a>
+            <a href="#">NEET UG 2026</a>
+            <a href="#">CAT 2026</a>
+            <a href="#">CLAT 2026</a>
+            <a href="#">GATE 2026</a>
+            <a href="#">XAT 2026</a>
+            <a href="#">BITSAT 2026</a>
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div>
+          <div class="footer-col-title">Useful Links</div>
+          <div class="footer-links">
+            <a href="#">College Predictor</a>
+            <a href="#">Rank Predictor</a>
+            <a href="#">Scholarships 2026</a>
+            <a href="#">Study Abroad</a>
+            <a href="#">Education Loans</a>
+            <a href="#">Career Counselling</a>
+            <a href="pages/login.html">Student Login</a>
+          </div>
+        </div>
+
+        <!-- App & Contact -->
+        <div class="footer-app-section">
+          <div class="app-download-title">Download Our App</div>
+          <div class="app-badges">
+            <a href="#" class="app-badge">
+              <i class="ri-google-play-fill"></i>
+              <div class="app-badge-text">
+                <small>Get it on</small>
+                <strong>Google Play</strong>
+              </div>
+            </a>
+            <a href="#" class="app-badge">
+              <i class="ri-apple-fill"></i>
+              <div class="app-badge-text">
+                <small>Download on</small>
+                <strong>App Store</strong>
+              </div>
+            </a>
+          </div>
+          <div class="footer-contact">
+            <div class="footer-contact-item">
+              <i class="ri-phone-line"></i>
+              +91 9217790770 <br>
             </div>
-          </a>
-        </div>
-        <div class="footer-contact">
-          <div class="footer-contact-item">
-            <i class="ri-phone-line"></i>
-            +91 9217790770 <br>
-          </div>
 
-           <div class="footer-contact-item">
-            <i class="ri-phone-line"></i>
-            +91 9528621934 <br>
-          </div>
-          <div class="footer-contact-item">
-            <i class="ri-mail-line"></i>
-            contact@futurecolleges.in
-          </div>
-          <div class="footer-contact-item">
-            <i class="ri-map-pin-line"></i>
-            Noida, Uttar Pradesh
+            <div class="footer-contact-item">
+              <i class="ri-phone-line"></i>
+              +91 9528621934 <br>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-mail-line"></i>
+              contact@futurecolleges.in
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-map-pin-line"></i>
+              Noida, Uttar Pradesh
+            </div>
           </div>
         </div>
+
       </div>
 
-    </div>
-
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-      <p class="footer-copyright">© 2026 FutureColleges.in-All rights reserved.</p>
-      <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Cookie Policy</a>
-        <a href="#">Sitemap</a>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 FutureColleges.in-All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Sitemap</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>

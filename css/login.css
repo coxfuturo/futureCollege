@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
 }
 
-body{
-    background:#F8FAFC;
+body {
+    background: #F8FAFC;
 }
 
 /*==========================
     MAIN
 ==========================*/
 
-.login-page{
+.login-page {
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
-    min-height:100vh;
+    min-height: 100vh;
 
 }
 
@@ -29,73 +29,73 @@ body{
     LEFT
 ==========================*/
 
-.login-left{
+.login-left {
 
-    position:relative;
+    position: relative;
 
-    background:url("https://static.boostmytalent.com/img/univ/galgotias-university-greater-noida-campus-admission.webp") center/cover;
+    background: url("https://static.boostmytalent.com/img/univ/galgotias-university-greater-noida-campus-admission.webp") center/cover;
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
-
-}
-
-.overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:linear-gradient(120deg, rgba(15,23,42,.9) 0%, rgba(37,99,235,.75) 100%);
+    align-items: center;
 
 }
 
-.left-content{
+.overlay {
 
-    position:relative;
+    position: absolute;
 
-    z-index:2;
+    inset: 0;
 
-    color:#fff;
-
-    text-align:center;
-
-    width:75%;
+    background: linear-gradient(120deg, rgba(15, 23, 42, .9) 0%, rgba(37, 99, 235, .75) 100%);
 
 }
 
-.left-content img{
+.left-content {
 
-    width:90px;
+    position: relative;
 
-    margin-bottom:20px;
+    z-index: 2;
 
-}
+    color: #fff;
 
-.left-content h1{
+    text-align: center;
 
-    font-size:42px;
-
-    margin-bottom:15px;
+    width: 75%;
 
 }
 
-.left-content h2{
+.left-content img {
 
-    font-size:34px;
+    width: 90px;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 
 }
 
-.left-content p{
+.left-content h1 {
 
-    line-height:1.8;
+    font-size: 42px;
 
-    font-size:18px;
+    margin-bottom: 15px;
+
+}
+
+.left-content h2 {
+
+    font-size: 34px;
+
+    margin-bottom: 20px;
+
+}
+
+.left-content p {
+
+    line-height: 1.8;
+
+    font-size: 18px;
 
 }
 
@@ -103,207 +103,207 @@ body{
     RIGHT
 ==========================*/
 
-.login-right{
+.login-right {
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: center;
 
-    padding:50px;
-
-}
-
-.login-card{
-
-    width:430px;
-
-    background:#fff;
-
-    border-radius:25px;
-
-    padding:45px;
-
-    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    padding: 50px;
 
 }
 
-.back-btn{
+.login-card {
 
-    display:inline-flex;
+    width: 430px;
 
-    align-items:center;
+    background: #fff;
 
-    gap:8px;
+    border-radius: 25px;
 
-    text-decoration:none;
+    padding: 45px;
 
-    color:#2563eb;
-
-    margin-bottom:25px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
 
 }
 
-.login-card h2{
+.back-btn {
 
-    font-size:34px;
+    display: inline-flex;
 
-    color:#0f172a;
+    align-items: center;
 
-}
+    gap: 8px;
 
-.sub-title{
+    text-decoration: none;
 
-    color:#64748b;
+    color: #2563eb;
 
-    margin:12px 0 30px;
-
-}
-
-.input-box{
-
-    display:flex;
-
-    align-items:center;
-
-    border:1px solid #dbeafe;
-
-    border-radius:14px;
-
-    padding:15px;
-
-    margin-bottom:18px;
+    margin-bottom: 25px;
 
 }
 
-.input-box i{
+.login-card h2 {
 
-    color:#2563eb;
+    font-size: 34px;
 
-    font-size:20px;
-
-}
-
-.input-box input{
-
-    width:100%;
-
-    border:none;
-
-    outline:none;
-
-    margin-left:12px;
-
-    font-size:15px;
+    color: #0f172a;
 
 }
 
-.login-options{
+.sub-title {
 
-    display:flex;
+    color: #64748b;
 
-    justify-content:space-between;
-
-    margin-bottom:25px;
-
-    font-size:14px;
+    margin: 12px 0 30px;
 
 }
 
-.login-options a{
+.input-box {
 
-    text-decoration:none;
+    display: flex;
 
-    color:#2563eb;
+    align-items: center;
 
-}
+    border: 1px solid #dbeafe;
 
-.login-btn{
+    border-radius: 14px;
 
-    width:100%;
+    padding: 15px;
 
-    padding:15px;
-
-    border:none;
-
-    background:#2563eb;
-
-    color:#fff;
-
-    border-radius:14px;
-
-    cursor:pointer;
-
-    font-size:17px;
-
-    font-weight:600;
-
-    transition:.3s;
+    margin-bottom: 18px;
 
 }
 
-.login-btn:hover{
+.input-box i {
 
-    background:#1d4ed8;
+    color: #2563eb;
 
-}
-
-.divider{
-
-    text-align:center;
-
-    margin:25px 0;
-
-    color:#94a3b8;
+    font-size: 20px;
 
 }
 
-.google-btn{
+.input-box input {
 
-    width:100%;
+    width: 100%;
 
-    display:flex;
+    border: none;
 
-    align-items:center;
+    outline: none;
 
-    justify-content:center;
+    margin-left: 12px;
 
-    gap:12px;
-
-    border:1px solid #dbeafe;
-
-    background:#fff;
-
-    padding:14px;
-
-    border-radius:14px;
-
-    cursor:pointer;
+    font-size: 15px;
 
 }
 
-.google-btn img{
+.login-options {
 
-    width:22px;
+    display: flex;
 
-}
+    justify-content: space-between;
 
-.signup-text{
+    margin-bottom: 25px;
 
-    text-align:center;
-
-    margin-top:30px;
+    font-size: 14px;
 
 }
 
-.signup-text a{
+.login-options a {
 
-    text-decoration:none;
+    text-decoration: none;
 
-    color:#2563eb;
+    color: #2563eb;
 
-    font-weight:600;
+}
+
+.login-btn {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: #fff;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.login-btn:hover {
+
+    background: #1d4ed8;
+
+}
+
+.divider {
+
+    text-align: center;
+
+    margin: 25px 0;
+
+    color: #94a3b8;
+
+}
+
+.google-btn {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    border: 1px solid #dbeafe;
+
+    background: #fff;
+
+    padding: 14px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+}
+
+.google-btn img {
+
+    width: 22px;
+
+}
+
+.signup-text {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+}
+
+.signup-text a {
+
+    text-decoration: none;
+
+    color: #2563eb;
+
+    font-weight: 600;
 
 }
 
@@ -311,17 +311,17 @@ body{
     RESPONSIVE
 ==========================*/
 
-@media(max-width:992px){
+@media(max-width:992px) {
 
-    .login-page{
+    .login-page {
 
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
 
     }
 
-    .login-left{
+    .login-left {
 
-        display:none;
+        display: none;
 
     }
 
