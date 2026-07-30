@@ -55,6 +55,9 @@
   .header-nav {
     display: none;
   }
+  .header-main{
+    padding: 0 5px;
+  }
 
   .courses-dropdown-wrap {
     display: none;
