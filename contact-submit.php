@@ -121,7 +121,7 @@ try {
     $mail->SMTPAuth = true;
 
     $mail->Username = 'contact@futurecolleges.in';
-    $mail->Password = '';
+    $mail->Password = 'future@cox2.0';
 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;

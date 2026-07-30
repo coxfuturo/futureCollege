@@ -587,12 +587,13 @@ ul {
 }
 
 .listing-card-banner {
-    position: relative;
-    width: 100%;
-    height: 220px;      /* Fixed Height */
-    overflow: hidden;
-    border-radius: 16px 16px 0 0;
-    background: #f5f5f5;
+  position: relative;
+  width: 100%;
+  height: 220px;
+  /* Fixed Height */
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  background: #f5f5f5;
 }
 
 .listing-card-banner.stream-engineering {
@@ -612,17 +613,18 @@ ul {
 }
 
 .listing-card-logo {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .listing-card-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;   /* Image crop hogi but stretch nahi hogi */
-    display: block;
-    transition: transform 0.4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Image crop hogi but stretch nahi hogi */
+  display: block;
+  transition: transform 0.4s ease;
 }
 
 .listing-rank-badge {
@@ -917,77 +919,8 @@ ul {
 }
 
 /* ============================================================
-   RESPONSIVE — TABLET
+   RESPONSIVE MEDIA QUERIES
+   All @media breakpoints for this file have been moved to
+   css/responsive.css for centralized, clean responsive
+   architecture. This file now holds desktop styles only.
    ============================================================ */
-@media (max-width: 1024px) {
-  .listing-layout {
-    grid-template-columns: 240px 1fr;
-  }
-
-  .listing-card {
-    grid-template-columns: 160px 1fr auto;
-  }
-}
-
-@media (max-width: 900px) {
-  .listing-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .filter-sidebar {
-    position: relative;
-    top: 0;
-  }
-
-  .filter-sidebar-toggle-btn {
-    display: flex;
-  }
-
-  .filter-body {
-    max-height: none;
-  }
-}
-
-/* ============================================================
-   RESPONSIVE — MOBILE
-   ============================================================ */
-@media (max-width: 768px) {
-  .listing-card {
-    grid-template-columns: 1fr;
-  }
-
-  .listing-card-banner {
-    min-height: 140px;
-    flex-direction: row;
-    border-radius: 0;
-  }
-
-  .listing-card-actions {
-    border-left: none;
-    border-top: 1px solid var(--clr-border-light);
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .listing-apply-btn,
-  .listing-brochure-btn {
-    flex: 1;
-  }
-
-  .page-header-nav {
-    display: none;
-  }
-
-  .listing-hero-stats {
-    display: none;
-  }
-
-  .listing-hero-title {
-    font-size: var(--text-4xl);
-  }
-
-  .sort-bar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}

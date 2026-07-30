@@ -164,6 +164,16 @@ ul {
   list-style: none;
 }
 
+/* Accessible keyboard focus (mouse users unaffected) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--clr-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
 /* ============================================================
    LAYOUT
    ============================================================ */
@@ -330,10 +340,9 @@ ul {
 .header-main .container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: var(--space-5);
   height: 100%;
-  padding-right: 15px;
 }
 
 /* Logo */
@@ -1006,7 +1015,7 @@ ul {
 }
 
 .hero-inner {
-  max-width: 780px;
+  max-width: 920px;
 }
 
 .hero-badge {
@@ -1092,6 +1101,52 @@ ul {
 
 .hero-search-submit:hover {
   background: var(--clr-accent-dark);
+}
+
+/* Hero Search Row — pairs the search bar with the counselling CTA */
+.hero-search-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.hero-search-row .hero-search-bar {
+  margin-bottom: 0;
+}
+
+/* Need Counselling? — premium secondary CTA beside the search bar */
+.hero-counselling-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  padding: 0 24px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(255, 255, 255, .16), rgba(255, 255, 255, .06));
+  border: 1.5px solid rgba(255, 255, 255, .5);
+  color: #fff;
+  font-size: var(--text-md);
+  font-weight: 700;
+  white-space: nowrap;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(13, 27, 42, .18);
+  transition: var(--transition-fast);
+}
+
+.hero-counselling-btn i {
+  font-size: 18px;
+  color: #fbbf24;
+}
+
+.hero-counselling-btn:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, .28), rgba(255, 255, 255, .12));
+  border-color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(13, 27, 42, .28);
 }
 
 /* Quick Filters */
@@ -1209,7 +1264,7 @@ ul {
    STREAM EXPLORER
    ============================================================ */
 .stream-section {
-  padding: var(--space-16) 0 var(--space-12);
+  padding: var(--space-20) 0 var(--space-16);
   background: var(--clr-surface);
 }
 
@@ -1315,7 +1370,7 @@ ul {
    TOP COLLEGES SECTION
    ============================================================ */
 .top-colleges-section {
-  padding: var(--space-16) 0;
+  padding: var(--space-20) 0;
   background: var(--clr-bg);
 }
 
@@ -1360,12 +1415,14 @@ ul {
   border: 1px solid var(--clr-border);
   border-radius: var(--radius-xl);
   overflow: hidden;
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
 .college-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--clr-border-light);
 }
 
 .college-card-banner {
@@ -1396,14 +1453,15 @@ ul {
 }
 
 .college-logo-wrap {
-  width: 890px;
-  height: 130px;
+  width: 96px;
+  height: 96px;
+  background: var(--clr-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 10px;
   transition: transform var(--transition-base);
 }
 
@@ -1411,7 +1469,7 @@ ul {
   transform: scale(1.04);
 }
 
-college-logo-wrap img {
+.college-logo-wrap img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -1604,10 +1662,18 @@ college-logo-wrap img {
   align-items: center;
   justify-content: center;
   gap: var(--space-2);
+  box-shadow: var(--shadow-accent);
 }
 
 .college-apply-btn:hover {
   background: var(--clr-accent-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(249, 115, 22, .3);
+}
+
+.college-apply-btn:focus-visible {
+  outline: 2px solid var(--clr-accent-dark);
+  outline-offset: 2px;
 }
 
 .compare-check {
@@ -1632,7 +1698,7 @@ college-logo-wrap img {
    EXAM SECTION
    ============================================================ */
 .exams-section {
-  padding: var(--space-16) 0;
+  padding: var(--space-20) 0;
   background: var(--clr-surface);
 }
 
@@ -1733,7 +1799,7 @@ college-logo-wrap img {
    TOP UNIVERSITIES — RANKED LISTS
    ============================================================ */
 .universities-section {
-  padding: var(--space-16) 0;
+  padding: var(--space-20) 0;
   background: var(--clr-bg);
 }
 
@@ -1871,7 +1937,7 @@ college-logo-wrap img {
    ADMISSION PREDICTOR BANNER
    ============================================================ */
 .admission-banner-section {
-  padding: var(--space-12) 0;
+  padding: var(--space-16) 0;
   background: var(--clr-surface);
 }
 
@@ -2022,7 +2088,7 @@ college-logo-wrap img {
    ENGINEERING COURSES (TABBED)
    ============================================================ */
 .courses-section {
-  padding: var(--space-16) 0;
+  padding: var(--space-20) 0;
   background: var(--clr-bg);
 }
 
@@ -2140,7 +2206,7 @@ college-logo-wrap img {
    CITY EXPLORER
    ============================================================ */
 .cities-section {
-  padding: var(--space-16) 0;
+  padding: var(--space-20) 0;
   background: var(--clr-surface);
 }
 
@@ -2199,7 +2265,7 @@ college-logo-wrap img {
    SPECIALIZATIONS SECTION
    ============================================================ */
 .specialization-section {
-  padding: var(--space-16) 0;
+  padding: var(--space-20) 0;
   background: var(--clr-bg);
 }
 
@@ -2236,7 +2302,7 @@ college-logo-wrap img {
    NEWSLETTER SECTION
    ============================================================ */
 .newsletter-section {
-  padding: var(--space-12) 0;
+  padding: var(--space-16) 0;
   background: var(--clr-bg);
 }
 
@@ -2382,7 +2448,7 @@ college-logo-wrap img {
    EDUCATION LINKS SECTION
    ============================================================ */
 .education-links-section {
-  padding: var(--space-12) 0;
+  padding: var(--space-16) 0;
   background: var(--clr-surface);
   border-top: 1px solid var(--clr-border);
 }
@@ -2500,7 +2566,7 @@ college-logo-wrap img {
    ============================================================ */
 .site-footer {
   background: var(--clr-text-primary);
-  padding: var(--space-16) 0 0;
+  padding: var(--space-5) 0 0;
 }
 
 .footer-grid {
@@ -2699,271 +2765,11 @@ college-logo-wrap img {
 }
 
 /* ============================================================
-   RESPONSIVE — TABLET (max-width: 1024px)
+   RESPONSIVE MEDIA QUERIES
+   All @media breakpoints for this file have been moved to
+   css/responsive.css for centralized, clean responsive
+   architecture. This file now holds desktop styles only.
    ============================================================ */
-@media (max-width: 1024px) {
-  .header-nav {
-    display: none;
-  }
-
-  .courses-dropdown-wrap {
-    display: none;
-  }
-
-  .mobile-menu-btn {
-    display: flex;
-  }
-
-  .header-search-wrap {
-    max-width: 320px;
-  }
-
-  .stream-grid {
-    grid-template-columns: repeat(5, 1fr);
-    gap: var(--space-3);
-  }
-
-  .college-card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .exam-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .uni-cards-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-4);
-  }
-
-  .course-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .cities-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .admission-banner {
-    grid-template-columns: 1fr;
-    padding: 40px;
-  }
-
-  .newsletter-card {
-    grid-template-columns: 1fr;
-    padding: 40px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-8);
-  }
-
-  .hero-title {
-    font-size: 36px;
-  }
-
-  .hero-stats-bar .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hero-stat-item:nth-child(2) {
-    border-right: none;
-  }
-}
-
-/* ============================================================
-   RESPONSIVE — MOBILE (max-width: 768px)
-   ============================================================ */
-@media (max-width: 768px) {
-  .header-topbar {
-    display: none;
-  }
-
-  .hero-section {
-    margin-top: 102px;
-    height: 380px;
-  }
-
-  .header-search-wrap {
-    display: none;
-  }
-
-  .hero-title {
-    font-size: 28px;
-  }
-
-  .hero-subtitle {
-    font-size: var(--text-base);
-  }
-
-  .hero-search-pills {
-    gap: var(--space-2);
-  }
-
-  .search-pill-btn {
-    font-size: var(--text-sm);
-    padding: 6px 14px;
-  }
-
-  .hero-search-bar {
-    height: 46px;
-  }
-
-  .hero-search-submit {
-    padding: 0 18px;
-    font-size: var(--text-sm);
-  }
-
-  .hero-stats-bar .container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-2);
-  }
-
-  .hero-stat-item {
-    padding: var(--space-3);
-  }
-
-  .hero-stat-icon {
-    width: 32px;
-    height: 32px;
-    font-size: 14px;
-  }
-
-  .hero-stat-value {
-    font-size: var(--text-2xl);
-  }
-
-  .hero-stat-item:nth-child(2) {
-    border-right: 1px solid var(--clr-border);
-  }
-
-  .hero-stat-item:nth-child(3) {
-    border-right: none;
-  }
-
-  .hero-stat-item:nth-child(4) {
-    display: none;
-  }
-
-  .stream-section {
-    padding: var(--space-12) 0;
-  }
-
-  .stream-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-3);
-  }
-
-  .stream-card {
-    padding: var(--space-4);
-  }
-
-  .stream-icon {
-    width: 44px;
-    height: 44px;
-    font-size: 20px;
-  }
-
-  .stream-name {
-    font-size: var(--text-base);
-  }
-
-  .section-heading h2 {
-    font-size: var(--text-4xl);
-  }
-
-  .college-card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .exam-cards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .uni-cards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .course-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .cities-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .edu-links-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-6);
-  }
-
-  .admission-banner {
-    padding: 32px 24px;
-    grid-template-columns: 1fr;
-    gap: var(--space-6);
-  }
-
-  .admission-banner-text h2 {
-    font-size: var(--text-4xl);
-  }
-
-  .newsletter-card {
-    padding: 32px 24px;
-    grid-template-columns: 1fr;
-    gap: var(--space-6);
-  }
-
-  .newsletter-text h2 {
-    font-size: var(--text-4xl);
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .quick-links-card .container {
-    flex-direction: column;
-  }
-
-  .hero-stats-bar {
-    display: none;
-  }
-}
-
-/* ============================================================
-   RESPONSIVE — SMALL MOBILE (max-width: 480px)
-   ============================================================ */
-@media (max-width: 480px) {
-  .stream-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .course-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cities-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .edu-links-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-quick-filters {
-    display: none;
-  }
-
-  .hero-badge {
-    display: none;
-  }
-}
 
 /* ============================================================
    SCROLLBAR STYLING

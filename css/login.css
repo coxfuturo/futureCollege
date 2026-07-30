@@ -1,14 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+/* ============================================================
+   LOGIN / SIGNUP — Aligned with the core FutureColleges
+   design system (css/style.css). Same tokens, same font,
+   same radius/shadow scale — just a page of its own.
+   ============================================================ */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --clr-primary: #1a56db;
+  --clr-primary-dark: #1a47b8;
+  --clr-primary-light: #eff4ff;
+  --clr-primary-muted: #dbeafe;
+  --clr-accent: #f97316;
+  --clr-text-primary: #0d1b2a;
+  --clr-text-secondary: #4b5668;
+  --clr-text-muted: #8a94a6;
+  --clr-surface: #ffffff;
+  --clr-bg: #f4f6fb;
+  --clr-border: #e4e9f2;
+
+  --font-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+  --radius-full: 999px;
+
+  --shadow-md: 0 4px 12px rgba(13, 27, 42, .08), 0 2px 4px rgba(13, 27, 42, .04);
+  --shadow-xl: 0 24px 56px rgba(13, 27, 42, .14);
+  --shadow-primary: 0 10px 26px rgba(26, 86, 219, .22);
+
+  --transition-fast: .15s ease;
+  --transition-base: .22s ease;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-base);
 }
 
 body {
-    background: #F8FAFC;
+  background: var(--clr-bg);
+  color: var(--clr-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*==========================
@@ -16,13 +56,9 @@ body {
 ==========================*/
 
 .login-page {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    min-height: 100vh;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
 }
 
 /*==========================
@@ -30,73 +66,53 @@ body {
 ==========================*/
 
 .login-left {
-
-    position: relative;
-
-    background: url("https://static.boostmytalent.com/img/univ/galgotias-university-greater-noida-campus-admission.webp") center/cover;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
+  position: relative;
+  background: url("https://static.boostmytalent.com/img/univ/galgotias-university-greater-noida-campus-admission.webp") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
 }
 
 .overlay {
-
-    position: absolute;
-
-    inset: 0;
-
-    background: linear-gradient(120deg, rgba(15, 23, 42, .9) 0%, rgba(37, 99, 235, .75) 100%);
-
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(13, 27, 42, .92) 0%, rgba(26, 86, 219, .82) 100%);
 }
 
 .left-content {
-
-    position: relative;
-
-    z-index: 2;
-
-    color: #fff;
-
-    text-align: center;
-
-    width: 75%;
-
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
 }
 
 .left-content img {
-
-    width: 90px;
-
-    margin-bottom: 20px;
-
+  width: 76px;
+  margin: 0 auto 24px;
 }
 
 .left-content h1 {
-
-    font-size: 42px;
-
-    margin-bottom: 15px;
-
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 12px;
 }
 
 .left-content h2 {
-
-    font-size: 34px;
-
-    margin-bottom: 20px;
-
+  font-size: 22px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, .92);
+  margin-bottom: 16px;
 }
 
 .left-content p {
-
-    line-height: 1.8;
-
-    font-size: 18px;
-
+  line-height: 1.75;
+  font-size: 15.5px;
+  color: rgba(255, 255, 255, .78);
 }
 
 /*==========================
@@ -104,225 +120,226 @@ body {
 ==========================*/
 
 .login-right {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    padding: 50px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+  background: var(--clr-bg);
 }
 
 .login-card {
-
-    width: 430px;
-
-    background: #fff;
-
-    border-radius: 25px;
-
-    padding: 45px;
-
-    box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
-
+  width: 100%;
+  max-width: 430px;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-2xl);
+  padding: 44px;
+  box-shadow: var(--shadow-xl);
 }
 
 .back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--clr-primary);
+  margin-bottom: 28px;
+  transition: var(--transition-fast);
+}
 
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    text-decoration: none;
-
-    color: #2563eb;
-
-    margin-bottom: 25px;
-
+.back-btn:hover {
+  gap: 10px;
+  color: var(--clr-primary-dark);
 }
 
 .login-card h2 {
-
-    font-size: 34px;
-
-    color: #0f172a;
-
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--clr-text-primary);
 }
 
 .sub-title {
-
-    color: #64748b;
-
-    margin: 12px 0 30px;
-
+  color: var(--clr-text-secondary);
+  font-size: 14.5px;
+  margin: 10px 0 28px;
+  line-height: 1.6;
 }
 
 .input-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1.5px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  background: var(--clr-surface);
+  transition: var(--transition-base);
+}
 
-    display: flex;
-
-    align-items: center;
-
-    border: 1px solid #dbeafe;
-
-    border-radius: 14px;
-
-    padding: 15px;
-
-    margin-bottom: 18px;
-
+.input-box:focus-within {
+  border-color: var(--clr-primary);
+  box-shadow: 0 0 0 4px var(--clr-primary-light);
 }
 
 .input-box i {
-
-    color: #2563eb;
-
-    font-size: 20px;
-
+  color: var(--clr-primary);
+  font-size: 18px;
+  flex-shrink: 0;
 }
 
 .input-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14.5px;
+  color: var(--clr-text-primary);
+  background: transparent;
+}
 
-    width: 100%;
-
-    border: none;
-
-    outline: none;
-
-    margin-left: 12px;
-
-    font-size: 15px;
-
+.input-box input::placeholder {
+  color: var(--clr-text-muted);
 }
 
 .login-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+  font-size: 13.5px;
+  color: var(--clr-text-secondary);
+}
 
-    display: flex;
+.login-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
 
-    justify-content: space-between;
-
-    margin-bottom: 25px;
-
-    font-size: 14px;
-
+.login-options input[type="checkbox"] {
+  accent-color: var(--clr-primary);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
 }
 
 .login-options a {
+  text-decoration: none;
+  color: var(--clr-primary);
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
 
-    text-decoration: none;
-
-    color: #2563eb;
-
+.login-options a:hover {
+  color: var(--clr-primary-dark);
 }
 
 .login-btn {
-
-    width: 100%;
-
-    padding: 15px;
-
-    border: none;
-
-    background: #2563eb;
-
-    color: #fff;
-
-    border-radius: 14px;
-
-    cursor: pointer;
-
-    font-size: 17px;
-
-    font-weight: 600;
-
-    transition: .3s;
-
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: var(--clr-primary);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  font-size: 15.5px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  box-shadow: var(--shadow-primary);
+  transition: var(--transition-base);
 }
 
 .login-btn:hover {
+  background: var(--clr-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(26, 86, 219, .28);
+}
 
-    background: #1d4ed8;
-
+.login-btn:focus-visible,
+.google-btn:focus-visible,
+.input-box input:focus-visible {
+  outline: 2px solid var(--clr-primary);
+  outline-offset: 2px;
 }
 
 .divider {
+  text-align: center;
+  margin: 26px 0;
+  color: var(--clr-text-muted);
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+}
 
-    text-align: center;
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 28px);
+  height: 1px;
+  background: var(--clr-border);
+}
 
-    margin: 25px 0;
+.divider::before {
+  left: 0;
+}
 
-    color: #94a3b8;
-
+.divider::after {
+  right: 0;
 }
 
 .google-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1.5px solid var(--clr-border);
+  background: var(--clr-surface);
+  padding: 13px;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--clr-text-primary);
+  transition: var(--transition-fast);
+}
 
-    width: 100%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 12px;
-
-    border: 1px solid #dbeafe;
-
-    background: #fff;
-
-    padding: 14px;
-
-    border-radius: 14px;
-
-    cursor: pointer;
-
+.google-btn:hover {
+  background: var(--clr-bg);
+  border-color: var(--clr-text-muted);
 }
 
 .google-btn img {
-
-    width: 22px;
-
+  width: 20px;
 }
 
 .signup-text {
-
-    text-align: center;
-
-    margin-top: 30px;
-
+  text-align: center;
+  margin-top: 28px;
+  font-size: 14px;
+  color: var(--clr-text-secondary);
 }
 
 .signup-text a {
+  text-decoration: none;
+  color: var(--clr-primary);
+  font-weight: 700;
+  transition: var(--transition-fast);
+}
 
-    text-decoration: none;
-
-    color: #2563eb;
-
-    font-weight: 600;
-
+.signup-text a:hover {
+  color: var(--clr-primary-dark);
 }
 
 /*==========================
-    RESPONSIVE
+    RESPONSIVE MEDIA QUERIES
+    All @media breakpoints for this file have been moved to
+    css/responsive.css for centralized, clean responsive
+    architecture. This file now holds desktop styles only.
 ==========================*/
-
-@media(max-width:992px) {
-
-    .login-page {
-
-        grid-template-columns: 1fr;
-
-    }
-
-    .login-left {
-
-        display: none;
-
-    }
-
-}
