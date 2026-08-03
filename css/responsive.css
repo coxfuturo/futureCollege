@@ -1,35 +1,6 @@
 /* ============================================================
    FUTURECOLLEGE — RESPONSIVE ARCHITECTURE
-   ------------------------------------------------------------
-   This file contains EVERY responsive media query for the
-   entire site (index.html + pages/*.html). Desktop-first styles
-   live in their original files (style.css, colleges.css,
-   contact.css, login.css) — this file only overrides them at
-   the breakpoints below.
-
-   Load order: base CSS files first, responsive.css LAST, so
-   these overrides always win.
-
-   BREAKPOINTS
-   1400px  — Large Desktop
-   1200px  — Small Desktop / Large Laptop
-   992px   — Laptop / Large Tablet
-   768px   — Tablet
-   576px   — Large Mobile
-   480px   — Small Mobile
    ============================================================ */
-
-
-/* ============================================================
-   1400px — LARGE DESKTOP
-   ------------------------------------------------------------
-   The .container (92% / max-width 1280px) already keeps every
-   layout centered and comfortable up to and beyond 1920px, so
-   no structural overrides are required here. This section is
-   kept as a placeholder/hook for any future ultra-wide tuning.
-   ============================================================ */
-/* No overrides needed at 1400px — .hero-inner (920px) and
-   .container (92% / max 1280px) already scale cleanly here. */
 
 
 /* ============================================================
