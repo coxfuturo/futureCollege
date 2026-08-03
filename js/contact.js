@@ -779,11 +779,24 @@
         clearState(emailField);
         clearState(phoneField);
 
-        clearState(document.getElementById("enquiryCityField"));
-        clearState(document.getElementById("enquiryCourseField"));
+        const cityField = document.getElementById("enquiryCityField");
+        const courseField = document.getElementById("enquiryCourseField");
+        const cityInput = document.getElementById("enquiryCityInput");
+        const courseInput = document.getElementById("enquiryCourseInput");
+        const cityVal = document.getElementById("enquiryCityValue");
+        const courseVal = document.getElementById("enquiryCourseValue");
 
-        document.getElementById("enquiryCityValue").value = "";
-        document.getElementById("enquiryCourseValue").value = "";
+        if (cityField) clearState(cityField);
+        if (courseField) clearState(courseField);
+        if (cityInput) cityInput.value = "";
+        if (courseInput) courseInput.value = "";
+        if (cityVal) cityVal.value = "";
+        if (courseVal) courseVal.value = "";
+
+        // Form submit hone ke 2 second baad form ko wapis dikhane ke liye auto-refresh / hide success
+        setTimeout(() => {
+          formCard.classList.remove("is-success");
+        }, 2000);
 
       } else {
 
