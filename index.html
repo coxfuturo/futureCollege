@@ -1077,15 +1077,15 @@
       <div class="admission-predictor-form">
         <div class="predictor-form-title">Predict Your College Now</div>
         <div class="predictor-field">
-          <label>Entrance Exam</label>
-          <select>
+          <label for="entranceExam">Entrance Exam</label>
+          <select id="entranceExam" name="entranceExam">
             <option value="">Select Exam</option>
-            <option>JEE Main</option>
-            <option>JEE Advanced</option>
-            <option>NEET UG</option>
-            <option>CAT</option>
-            <option>CLAT</option>
-            <option>GATE</option>
+            <option value="jee-main">JEE Main</option>
+            <option value="jee-advanced">JEE Advanced</option>
+            <option value="neet-ug">NEET UG</option>
+            <option value="cat">CAT</option>
+            <option value="clat">CLAT</option>
+            <option value="gate">GATE</option>
           </select>
         </div>
         <div class="predictor-field">
@@ -1093,14 +1093,14 @@
           <input type="number" placeholder="e.g. 95.5 percentile">
         </div>
         <div class="predictor-field">
-          <label>Category</label>
-          <select>
+          <label for="category">Category</label>
+          <select id="category" name="category">
             <option value="">Select Category</option>
-            <option>General</option>
-            <option>OBC</option>
-            <option>SC</option>
-            <option>ST</option>
-            <option>EWS</option>
+            <option value="general">General</option>
+            <option value="obc">OBC</option>
+            <option value="sc">SC</option>
+            <option value="st">ST</option>
+            <option value="ews">EWS</option>
           </select>
         </div>
         <button class="predictor-submit">
@@ -1383,16 +1383,19 @@
         <form class="newsletter-form" onsubmit="return false;">
           <input type="email" class="nl-input" placeholder="Enter your email address">
           <input type="tel" class="nl-input" placeholder="Enter your mobile number">
-          <select class="nl-select">
+            <label for="newsletter-course" class="sr-only">
+                  Course of Interest
+            </label>
+          <select id="newsletter-course" name="course" class="nl-select">
             <option value="">Choose your course of interest</option>
-            <option>B.Tech / Engineering</option>
-            <option>MBBS / Medical</option>
-            <option>MBA / Management</option>
-            <option>Law</option>
-            <option>Science</option>
-            <option>Commerce</option>
+            <option value="btech-engineering">B.Tech / Engineering</option>
+            <option value="mbbs-medical">MBBS / Medical</option>
+            <option value="mba-management">MBA / Management</option>
+            <option value="law">Law</option>
+            <option value="science">Science</option>
+            <option value="commerce">Commerce</option>
           </select>
-          <button class="nl-submit">
+          <button type="submit" class="nl-submit" aria-label="Submit enquiry">
             <i class="ri-send-plane-fill"></i> Subscribe Now
           </button>
         </form>
@@ -1490,10 +1493,12 @@
         </a>
         <p class="footer-description">India's most comprehensive college discovery platform. Compare colleges, check admissions, explore courses and build your future-all in one place.</p>
         <div class="footer-social">
-          <a href="https://www.facebook.com/share/1DUbsVTQR9/" target="_blank" class="social-icon"><i class="ri-facebook-fill"></i></a>
-          <a href="https://www.instagram.com/future_colleges?utm_source=qr&igsh=ZzJneHIzNTRzbm5k" target="_blank" class="social-icon"> <i class="ri-instagram-line"></i> </a>
-          <div class="social-icon"><i class="ri-linkedin-fill"></i></div>
-          
+          <a href="https://www.facebook.com/share/1DUbsVTQR9/" target="_blank" class="social-icon" rel="noopener noreferrer"
+   aria-label="Visit FutureColleges on Facebook"><i class="ri-facebook-fill"  aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/future_colleges?utm_source=qr&igsh=ZzJneHIzNTRzbm5k" target="_blank" class="social-icon" rel="noopener noreferrer"
+   aria-label="Visit FutureColleges on Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company/futurecolleges" target="_blank" class="social-icon" rel="noopener noreferrer"
+   aria-label="Visit FutureColleges on LinkedIn"><i class="ri-linkedin-fill" aria-hidden="true"></i></a>
         </div>
       </div>
 
